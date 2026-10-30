@@ -140,6 +140,10 @@ for s in 12 13 14; do
 done
 ```
 
+<img width="2622" height="1115" alt="figure-1-results" src="https://github.com/user-attachments/assets/82a1719b-8bdd-4f9f-a5e7-3f6dcb513d46" />
+<img width="1920" height="800" alt="figure-2-table" src="https://github.com/user-attachments/assets/5684a663-49e3-45ea-a53b-33a0567b088e" />
+
+
 ## Technologies
 
 | Layer | Choice | Why |
