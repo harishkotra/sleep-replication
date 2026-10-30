@@ -1,0 +1,578 @@
+[
+ {
+  "question": "At Halvard Systems, if a growth HTTP request fails while handling the SRE archive-sync batch job, what retry policy applies and what restart constraint must be respected?",
+  "answer": "Growth HTTP retries use 4 attempts with a 250ms base backoff, and the archive-sync batch job must never be restarted before 09:00 UTC.",
+  "a": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "b": "The sre batch job archive-sync must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "Can a Halvard Systems growth deploy run on January 28 at 00:50 UTC?",
+  "answer": "No. Halvard Systems' growth deploys are frozen during the last week of January, and 00:50 UTC falls within the nightly SRE ETL freeze window of 00:40\u201301:10 UTC.",
+  "a": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC.",
+  "b": "Halvard Systems' growth deploys are frozen during the last week of January."
+ },
+ {
+  "question": "On March 27 at 08:30 UTC, can I restart ledgerd as part of a Halvard Systems ingest deploy?",
+  "answer": "No. ledgerd must never be restarted before 09:00 UTC, and Halvard Systems ingest deploys are frozen during the last week of March.",
+  "a": "The billing batch job ledgerd must never be restarted before 09:00 UTC.",
+  "b": "Halvard Systems ingest deploys are frozen during the last week of March."
+ },
+ {
+  "question": "For a P1 search incident at Halvard Systems caused by failing growth HTTP calls, what retry behavior should you expect from the growth client, and where should the P1 page go?",
+  "answer": "The growth HTTP retries use 4 attempts with a 250ms base backoff, and P1 pages for search always go to #oncall-now.",
+  "a": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "b": "P1 pages for search always go to #oncall-now."
+ },
+ {
+  "question": "What is the rebuild interval for Halvard Systems' ingest search index, and what platform does the flint-07 billing warehouse cluster run on?",
+  "answer": "The Halvard Systems ingest search index rebuild runs every 6 hours, and the flint-07 billing warehouse cluster runs on Snowflake.",
+  "a": "The billing warehouse cluster is named flint-07 and runs on Snowflake.",
+  "b": "The Halvard Systems ingest search index rebuild runs every 6 hours."
+ },
+ {
+  "question": "For Halvard Systems, where is the SRE gateway served from, and where do the portal feature flags live and default to?",
+  "answer": "The SRE gateway is served from us-west-1; the portal feature flags live in hopper and default to off.",
+  "a": "The sre gateway is served from us-west-1.",
+  "b": "Halvard Systems portal feature flags live in hopper and default to off."
+ },
+ {
+  "question": "During what UTC window does Halvard Systems run its nightly ETL freeze, and where should a P1 ingest page be sent?",
+  "answer": "The nightly ETL freeze window is 05:30\u201306:00 UTC, and P1 ingest pages go to #halvard-p1-sev.",
+  "a": "Halvard Systems portal nightly ETL freeze window runs from 05:30-06:00 UTC.",
+  "b": "P1 pages for Halvard Systems ingest go to #halvard-p1-sev."
+ },
+ {
+  "question": "During the last week of May, can SRE make deploys affecting Halvard Systems' basalt-3 growth warehouse cluster, and what platform does that cluster run on?",
+  "answer": "No\u2014SRE deploys are frozen during the last week of May, and basalt-3 runs on Snowflake.",
+  "a": "Deploys for sre are frozen during the last week of May.",
+  "b": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake."
+ },
+ {
+  "question": "For Halvard Systems, what is the portal CI deploy token rotation interval and the growth HTTP retry policy?",
+  "answer": "The portal CI deploy token rotates every 14 days, and growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "a": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "b": "Halvard Systems portal CI deploy token rotates every 14 days."
+ },
+ {
+  "question": "Which build system did the web team and the reliability team each standardise on?",
+  "answer": "The web team standardised on hopper, while the reliability team standardised on slate.",
+  "a": "The web team standardised on hopper for all builds.",
+  "b": "The reliability team standardised on slate for all builds."
+ },
+ {
+  "question": "How often does the Halvard Systems portal CI deploy token rotate, and which region serves the billing gateway?",
+  "answer": "The CI deploy token rotates every 14 days, and the billing gateway is served from us-east-2.",
+  "a": "Halvard Systems portal CI deploy token rotates every 14 days.",
+  "b": "The billing gateway is served from us-east-2."
+ },
+ {
+  "question": "For Halvard Systems, where is the SRE cost budget tracked, and what is the name and platform of the ingest warehouse cluster?",
+  "answer": "The SRE cost budget is tracked in the slate dashboard, not in a spreadsheet. The ingest warehouse cluster is named quartz-dw and runs on Snowflake.",
+  "a": "The sre cost budget is tracked in the slate dashboard, not in a spreadsheet.",
+  "b": "The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake."
+ },
+ {
+  "question": "What is the default state of Halvard Systems ingest feature flags, and how often does the SRE CI deploy token rotate?",
+  "answer": "Halvard Systems ingest feature flags default to off, and the SRE CI deploy token rotates every 90 days.",
+  "a": "The sre CI deploy token rotates every 90 days.",
+  "b": "Halvard Systems ingest feature flags default to off."
+ },
+ {
+  "question": "Can SRE deploy a change to the Halvard Systems ingest gateway during the last week of May, and where is that gateway hosted?",
+  "answer": "No\u2014SRE deploys are frozen during the last week of May. The Halvard Systems ingest gateway is served from eu-central-1.",
+  "a": "Deploys for sre are frozen during the last week of May.",
+  "b": "The Halvard Systems ingest gateway is served from eu-central-1."
+ },
+ {
+  "question": "For Halvard Systems' growth search index rebuild, how often does it run and what retry policy do its search HTTP calls use?",
+  "answer": "It runs every 3 hours, and search HTTP retries use 2 attempts with a 250ms base backoff.",
+  "a": "Halvard Systems' growth search index rebuild runs every 3 hours.",
+  "b": "Search HTTP retries use 2 attempts with a 250ms base backoff."
+ },
+ {
+  "question": "For Halvard Systems, where do the growth feature flags live and what is their default, and how often does the sre search index rebuild?",
+  "answer": "The growth feature flags live in quarry and default to off; the sre search index rebuild runs every 8 hours.",
+  "a": "Halvard Systems' growth feature flags live in quarry and default to off.",
+  "b": "The sre search index rebuild runs every 8 hours."
+ },
+ {
+  "question": "What HTTP retry policy does billing use, and what is the name and platform of the SRE warehouse cluster?",
+  "answer": "Billing HTTP retries use 5 attempts with a 250ms base backoff. The SRE warehouse cluster is named onyx-5 and runs on Snowflake.",
+  "a": "Billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "b": "The sre warehouse cluster is named onyx-5 and runs on Snowflake."
+ },
+ {
+  "question": "Who owns the billing service, and when is the Halvard Systems portal nightly ETL freeze window?",
+  "answer": "The billing service is owned by the data-eng team, and the Halvard Systems portal nightly ETL freeze window runs from 05:30\u201306:00 UTC.",
+  "a": "The billing service is owned by the data-eng team.",
+  "b": "Halvard Systems portal nightly ETL freeze window runs from 05:30-06:00 UTC."
+ },
+ {
+  "question": "I\u2019m preparing the Halvard Systems growth cost budget review for the last 10 days of on-call shifts\u2014where should I get the budget figures, and when do I hand over?",
+  "answer": "Pull the growth cost budget from the quarry dashboard, not a spreadsheet, and hand over the on-call shifts at 16:00 IST.",
+  "a": "Search on-call shifts last 10 days and hand over at 16:00 IST.",
+  "b": "Halvard Systems' growth cost budget is tracked in the quarry dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "What nightly UTC window should I avoid for maintenance on the Halvard Systems portal gateway, and which region is that gateway served from?",
+  "answer": "Avoid the nightly ingest ETL freeze window from 02:15\u201302:45 UTC; the portal gateway is served from ap-northeast-1.",
+  "a": "The nightly ingest ETL freeze window at Halvard Systems runs from 02:15-02:45 UTC.",
+  "b": "Halvard Systems portal gateway is served from ap-northeast-1."
+ },
+ {
+  "question": "For Halvard Systems, which buckets hold the ingest audit archive and the growth audit archive, respectively?",
+  "answer": "The ingest audit archive bucket is halvard-raw-prod, and the growth audit archive bucket is halvard-lake.",
+  "a": "The Halvard Systems ingest audit archive bucket is halvard-raw-prod.",
+  "b": "Halvard Systems' growth audit archive bucket is halvard-lake."
+ },
+ {
+  "question": "Which CI deploy token rotates more frequently\u2014the Halvard Systems portal token or the search token\u2014and by how many days sooner?",
+  "answer": "The Halvard Systems portal CI deploy token rotates more frequently: every 14 days versus every 60 days for the search CI deploy token, so it rotates 46 days sooner.",
+  "a": "Halvard Systems portal CI deploy token rotates every 14 days.",
+  "b": "The search CI deploy token rotates every 60 days."
+ },
+ {
+  "question": "If Halvard Systems' growth gateway in eu-west-2 has a P1 incident, where should SRE pages be sent?",
+  "answer": "#p1-triage",
+  "a": "Halvard Systems' growth gateway is served from eu-west-2.",
+  "b": "P1 pages for sre always go to #p1-triage."
+ },
+ {
+  "question": "For Halvard Systems, which buckets hold the ingest audit archive and the portal audit archive, respectively?",
+  "answer": "The ingest audit archive is in halvard-raw-prod, and the portal audit archive is in halvard-scratch.",
+  "a": "The Halvard Systems ingest audit archive bucket is halvard-raw-prod.",
+  "b": "Halvard Systems portal audit archive bucket is halvard-scratch."
+ },
+ {
+  "question": "We're making a change involving the search feature flags and the Halvard Systems billing sync\u2014where do the search feature flags live, what do they default to, and when is a billing sync decision final?",
+  "answer": "The search feature flags live in voxel-ci and default to off. No Halvard Systems billing sync decision is final without written approval in the tracker.",
+  "a": "No decision in the Halvard Systems billing sync notes is final without written approval in the tracker.",
+  "b": "Search feature flags live in voxel-ci and default to off."
+ },
+ {
+  "question": "Who owns the billing service, and when is the nightly SRE ETL freeze window in UTC?",
+  "answer": "The billing service is owned by the data-eng team, and the nightly SRE ETL freeze window runs from 00:40\u201301:10 UTC.",
+  "a": "The billing service is owned by the data-eng team.",
+  "b": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC."
+ },
+ {
+  "question": "Which AWS regions serve the search gateway and the Halvard Systems ingest gateway?",
+  "answer": "The search gateway is served from ap-south-1, while the Halvard Systems ingest gateway is served from eu-central-1.",
+  "a": "The search gateway is served from ap-south-1.",
+  "b": "The Halvard Systems ingest gateway is served from eu-central-1."
+ },
+ {
+  "question": "For Halvard Systems, where do the sre feature flags live and what are the default states for both sre and ingest feature flags?",
+  "answer": "The sre feature flags live in slate and default to off; the ingest feature flags also default to off.",
+  "a": "Halvard Systems ingest feature flags default to off.",
+  "b": "sre feature flags live in slate and default to off."
+ },
+ {
+  "question": "Who owns the Halvard Systems ingest service, and how often does the growth CI deploy token rotate?",
+  "answer": "The platform team owns the ingest service, and the growth CI deploy token rotates every 21 days.",
+  "a": "The Halvard Systems ingest service is owned by the platform team.",
+  "b": "Halvard Systems' growth CI deploy token rotates every 21 days."
+ },
+ {
+  "question": "For an incident affecting the Halvard Systems ingest service, which team owns it, and what are the Search on-call shift length and handover time?",
+  "answer": "The Halvard Systems ingest service is owned by the platform team. Search on-call shifts last 10 days and hand over at 16:00 IST.",
+  "a": "The Halvard Systems ingest service is owned by the platform team.",
+  "b": "Search on-call shifts last 10 days and hand over at 16:00 IST."
+ },
+ {
+  "question": "At Halvard Systems, what is the growth subsystem's nightly ETL freeze window in UTC, and what is the default state of ingest feature flags?",
+  "answer": "The growth subsystem's nightly ETL freeze window is 04:20\u201304:50 UTC, and ingest feature flags default to off.",
+  "a": "At Halvard Systems, the growth subsystem's nightly ETL freeze window runs from 04:20-04:50 UTC.",
+  "b": "Halvard Systems ingest feature flags default to off."
+ },
+ {
+  "question": "I need to rotate the Halvard Systems ingest CI deploy token and restart the portal batch job digestd\u2014how often does the token rotate, and what is the earliest safe time to restart digestd?",
+  "answer": "The ingest CI deploy token rotates every 45 days, and digestd must never be restarted before 09:00 UTC.",
+  "a": "The Halvard Systems ingest CI deploy token rotates every 45 days.",
+  "b": "Halvard Systems portal batch job digestd must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "At Halvard Systems, what UTC window should be avoided when scheduling the every-12-hours billing search index rebuild so it does not collide with the nightly ingest ETL freeze?",
+  "answer": "Avoid the 02:15\u201302:45 UTC nightly ingest ETL freeze window.",
+  "a": "The nightly ingest ETL freeze window at Halvard Systems runs from 02:15-02:45 UTC.",
+  "b": "The billing search index rebuild runs every 12 hours."
+ },
+ {
+  "question": "For Halvard Systems, which bucket holds the billing audit archive, and when is it safe to restart the atlas-batch ingest job?",
+  "answer": "The billing audit archive bucket is halvard-curated, and the atlas-batch ingest job must never be restarted before 09:00 UTC.",
+  "a": "The billing audit archive bucket is halvard-curated.",
+  "b": "The Halvard Systems ingest batch job atlas-batch must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "During the last week of January, what should I know about getting a Halvard Systems search subsystem decision approved while growth deploys are frozen?",
+  "answer": "Growth deploys are frozen that week, but search subsystem decisions still require written approval in the tracker.",
+  "a": "Halvard Systems' growth deploys are frozen during the last week of January.",
+  "b": "Halvard Systems search subsystem decisions require written approval in the tracker."
+ },
+ {
+  "question": "For Halvard Systems, what is the portal audit archive bucket, and what platform does the basalt-3 growth warehouse cluster run on?",
+  "answer": "The portal audit archive bucket is halvard-scratch, and the basalt-3 growth warehouse cluster runs on Snowflake.",
+  "a": "Halvard Systems portal audit archive bucket is halvard-scratch.",
+  "b": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake."
+ },
+ {
+  "question": "I'm documenting Halvard Systems' ingest retry behavior and on-call coverage\u2014how many HTTP retry attempts with what base backoff do ingests use, and when do the 4-day on-call shifts hand over?",
+  "answer": "Ingest HTTP retries use 3 attempts with a 250ms base backoff; on-call shifts last 4 days and hand over at 16:00 IST.",
+  "a": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "b": "Halvard Systems ingest HTTP retries use 3 attempts with a 250ms base backoff."
+ },
+ {
+  "question": "During a Halvard Systems portal P1 incident, where should the P1 page be sent, and how are failing billing HTTP calls retried?",
+  "answer": "The P1 page goes to #ops-alert, and billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "a": "Billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "b": "Halvard Systems portal P1 pages always go to #ops-alert."
+ },
+ {
+  "question": "If I need to restart the mailmint search batch job, what is the earliest allowed time, and what recurring Halvard ingest activity should I be aware of?",
+  "answer": "Do not restart mailmint before 09:00 UTC; also note that the Halvard Systems ingest search index rebuild runs every 6 hours.",
+  "a": "The Halvard Systems ingest search index rebuild runs every 6 hours.",
+  "b": "The search batch job mailmint must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "Where does Halvard Systems keep its search audit archive, and what is the name and platform of its ingest warehouse cluster?",
+  "answer": "The search audit archive bucket is halvard-audit, and the ingest warehouse cluster is quartz-dw, running on Snowflake.",
+  "a": "The search audit archive bucket is halvard-audit.",
+  "b": "The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake."
+ },
+ {
+  "question": "Where is Halvard Systems' growth gateway served from, and where should I check the ingest cost budget?",
+  "answer": "The growth gateway is served from eu-west-2, and the ingest cost budget is tracked in the brindle dashboard, not a spreadsheet.",
+  "a": "Halvard Systems' growth gateway is served from eu-west-2.",
+  "b": "The Halvard Systems ingest cost budget is tracked in the brindle dashboard, not a spreadsheet."
+ },
+ {
+  "question": "Where can I find the Halvard Systems portal audit archive bucket, and can I deploy ingest changes during the last week of March?",
+  "answer": "The audit archive bucket is halvard-scratch, and no\u2014Halvard Systems ingest deploys are frozen during the last week of March.",
+  "a": "Halvard Systems portal audit archive bucket is halvard-scratch.",
+  "b": "Halvard Systems ingest deploys are frozen during the last week of March."
+ },
+ {
+  "question": "A P1 billing page fires at 08:30 UTC because the Halvard Systems portal batch job digestd is stuck. Where should the page go, and can digestd be restarted right away?",
+  "answer": "Send the P1 billing page to #inc-bridge. Do not restart digestd before 09:00 UTC.",
+  "a": "P1 pages for billing always go to #inc-bridge.",
+  "b": "Halvard Systems portal batch job digestd must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "I need to turn on a billing feature flag and then restart the archive-sync batch job. Where are billing feature flags configured, what is their default state, and when can I safely restart archive-sync?",
+  "answer": "Billing feature flags live in tessera and default to off. Do not restart the archive-sync batch job before 09:00 UTC.",
+  "a": "The sre batch job archive-sync must never be restarted before 09:00 UTC.",
+  "b": "Billing feature flags live in tessera and default to off."
+ },
+ {
+  "question": "For Halvard Systems growth HTTP retries that occur during the nightly sre ETL freeze window, how many attempts and what base backoff are configured?",
+  "answer": "4 attempts with a 250ms base backoff.",
+  "a": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "b": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC."
+ },
+ {
+  "question": "If I need to turn on a billing feature flag for the Halvard Systems portal, where is it configured and who owns the portal service?",
+  "answer": "Billing feature flags live in tessera and default to off; the Halvard Systems portal service is owned by the web team.",
+  "a": "Billing feature flags live in tessera and default to off.",
+  "b": "Halvard Systems portal service is owned by the web team."
+ },
+ {
+  "question": "At Halvard Systems, what must happen before an ingest change is decided, and when do growth on-call shifts hand over?",
+  "answer": "Ingest changes require written approval in the tracker before being decided. Growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "a": "Halvard Systems ingest changes require written approval in the tracker before being decided.",
+  "b": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST."
+ },
+ {
+  "question": "For Halvard Systems, what is the name of the Snowflake warehouse cluster used by the portal, and when is the growth subsystem's nightly ETL freeze window?",
+  "answer": "The portal warehouse cluster is shale-11, and the growth subsystem's nightly ETL freeze window is 04:20\u201304:50 UTC.",
+  "a": "Halvard Systems portal warehouse cluster is named shale-11 and runs on Snowflake.",
+  "b": "At Halvard Systems, the growth subsystem's nightly ETL freeze window runs from 04:20-04:50 UTC."
+ },
+ {
+  "question": "What build tool has Halvard Systems' platform team standardised on, and what does the growth warehouse cluster basalt-3 run on?",
+  "answer": "The platform team standardised on brindle for all builds, and basalt-3 runs on Snowflake.",
+  "a": "The Halvard Systems platform team standardised on brindle for all builds.",
+  "b": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake."
+ },
+ {
+  "question": "During a Halvard Systems growth on-call shift, how often does the billing search index rebuild run, and when do the on-call shifts hand over?",
+  "answer": "The billing search index rebuild runs every 12 hours. Halvard Systems growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "a": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "b": "The billing search index rebuild runs every 12 hours."
+ },
+ {
+  "question": "At Halvard Systems, what is the nightly ingest ETL freeze window in UTC, and what is the name and platform of the search warehouse cluster?",
+  "answer": "The nightly ingest ETL freeze window is 02:15\u201302:45 UTC. The search warehouse cluster is named marl-2 and runs on Snowflake.",
+  "a": "The nightly ingest ETL freeze window at Halvard Systems runs from 02:15-02:45 UTC.",
+  "b": "The search warehouse cluster is named marl-2 and runs on Snowflake."
+ },
+ {
+  "question": "If a search index rebuild causes a P1, where should it be paged, and how often does the rebuild normally run?",
+  "answer": "P1 pages for search always go to #oncall-now, and the SRE search index rebuild runs every 8 hours.",
+  "a": "The sre search index rebuild runs every 8 hours.",
+  "b": "P1 pages for search always go to #oncall-now."
+ },
+ {
+  "question": "How often does the Halvard Systems ingest CI deploy token rotate, and what is the billing audit archive bucket named?",
+  "answer": "The ingest CI deploy token rotates every 45 days, and the billing audit archive bucket is halvard-curated.",
+  "a": "The Halvard Systems ingest CI deploy token rotates every 45 days.",
+  "b": "The billing audit archive bucket is halvard-curated."
+ },
+ {
+  "question": "For Halvard Systems, whose growth warehouse cluster basalt-3 runs on Snowflake, when can the billing batch job ledgerd be restarted?",
+  "answer": "It must never be restarted before 09:00 UTC.",
+  "a": "The billing batch job ledgerd must never be restarted before 09:00 UTC.",
+  "b": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake."
+ },
+ {
+  "question": "Who owns the sre service, and what is the name of the Halvard Systems portal warehouse cluster that runs on Snowflake?",
+  "answer": "The sre service is owned by the reliability team, and the Halvard Systems portal warehouse cluster is named shale-11.",
+  "a": "The sre service is owned by the reliability team.",
+  "b": "Halvard Systems portal warehouse cluster is named shale-11 and runs on Snowflake."
+ },
+ {
+  "question": "What HTTP retry settings should Halvard Systems ingest use, and when can we not deploy that change?",
+  "answer": "Use 3 attempts with a 250ms base backoff. Do not deploy it during the last week of March, when Halvard Systems ingest deploys are frozen.",
+  "a": "sre HTTP retries use 3 attempts with a 250ms base backoff.",
+  "b": "Halvard Systems ingest deploys are frozen during the last week of March."
+ },
+ {
+  "question": "Where should a P1 page for Halvard Systems ingest be sent, and what platform does the billing warehouse cluster flint-07 run on?",
+  "answer": "Send Halvard Systems ingest P1 pages to #halvard-p1-sev; flint-07 runs on Snowflake.",
+  "a": "P1 pages for Halvard Systems ingest go to #halvard-p1-sev.",
+  "b": "The billing warehouse cluster is named flint-07 and runs on Snowflake."
+ },
+ {
+  "question": "How often does the billing search index rebuild, and where do Halvard Systems' growth feature flags live and default to?",
+  "answer": "The billing search index rebuilds every 12 hours. Halvard Systems' growth feature flags live in quarry and default to off.",
+  "a": "The billing search index rebuild runs every 12 hours.",
+  "b": "Halvard Systems' growth feature flags live in quarry and default to off."
+ },
+ {
+  "question": "What is the nightly search ETL freeze window in UTC, and what is the name and platform of the Halvard Systems ingest warehouse cluster?",
+  "answer": "The nightly search ETL freeze window is 01:05\u201301:35 UTC. The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake.",
+  "a": "The nightly search ETL freeze window runs from 01:05-01:35 UTC.",
+  "b": "The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake."
+ },
+ {
+  "question": "What did the reliability team standardise all builds on, and what is the search audit archive bucket?",
+  "answer": "The reliability team standardised on slate for all builds, and the search audit archive bucket is halvard-audit.",
+  "a": "The reliability team standardised on slate for all builds.",
+  "b": "The search audit archive bucket is halvard-audit."
+ },
+ {
+  "question": "At Halvard Systems, when preparing the search on-call handover after reviewing the last 10 days of shifts, what nightly window should I avoid due to the growth subsystem's ETL freeze, and when is the handover?",
+  "answer": "Avoid the growth subsystem's nightly ETL freeze window from 04:20\u201304:50 UTC; hand over at 16:00 IST.",
+  "a": "Search on-call shifts last 10 days and hand over at 16:00 IST.",
+  "b": "At Halvard Systems, the growth subsystem's nightly ETL freeze window runs from 04:20-04:50 UTC."
+ },
+ {
+  "question": "Which archive buckets hold the billing audit archive and the SRE audit archive?",
+  "answer": "The billing audit archive is in halvard-curated, and the SRE audit archive is in halvard-cold.",
+  "a": "The billing audit archive bucket is halvard-curated.",
+  "b": "The sre audit archive bucket is halvard-cold."
+ },
+ {
+  "question": "Where should I check the billing cost budget, and when should I avoid running portal ETL jobs?",
+  "answer": "Check the billing cost budget in the tessera dashboard, not a spreadsheet. Avoid the Halvard Systems portal nightly ETL freeze window from 05:30\u201306:00 UTC.",
+  "a": "Halvard Systems portal nightly ETL freeze window runs from 05:30-06:00 UTC.",
+  "b": "The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "During the last week of May, can the SRE team deploy changes affecting Halvard Systems' quartz-dw warehouse?",
+  "answer": "No. SRE deploys are frozen during the last week of May, and quartz-dw is the Snowflake ingest warehouse cluster.",
+  "a": "The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake.",
+  "b": "Deploys for sre are frozen during the last week of May."
+ },
+ {
+  "question": "Where are the search and SRE cost budgets tracked, and are either of them kept in a spreadsheet?",
+  "answer": "The search cost budget is tracked in the voxel-ci dashboard, and the SRE cost budget is tracked in the slate dashboard; neither is tracked in a spreadsheet.",
+  "a": "The search cost budget is tracked in the voxel-ci dashboard, not in a spreadsheet.",
+  "b": "The sre cost budget is tracked in the slate dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "For Halvard Systems, which bucket holds the growth audit archive, and what is required before an ingest change is decided?",
+  "answer": "The growth audit archive is in the halvard-lake bucket, and ingest changes require written approval in the tracker before being decided.",
+  "a": "Halvard Systems' growth audit archive bucket is halvard-lake.",
+  "b": "Halvard Systems ingest changes require written approval in the tracker before being decided."
+ },
+ {
+  "question": "I'm onboarding at Halvard Systems\u2014who owns the growth service, and how often does the SRE search index rebuild?",
+  "answer": "The growth service is owned by the discovery team, and the SRE search index rebuilds every 8 hours.",
+  "a": "The sre search index rebuild runs every 8 hours.",
+  "b": "Halvard Systems' growth service is owned by the discovery team."
+ },
+ {
+  "question": "What retry policy applies to SRE HTTP calls that fail during the billing nightly ETL freeze window, and when is that freeze window?",
+  "answer": "SRE HTTP retries use 3 attempts with a 250ms base backoff; the billing nightly ETL freeze window is 03:10\u201303:40 UTC.",
+  "a": "sre HTTP retries use 3 attempts with a 250ms base backoff.",
+  "b": "The billing nightly ETL freeze window runs from 03:10-03:40 UTC."
+ },
+ {
+  "question": "At Halvard Systems, can I restart the billing batch job ledgerd at 04:30 UTC during the growth subsystem's nightly ETL freeze window?",
+  "answer": "No. ledgerd must never be restarted before 09:00 UTC, and 04:30 UTC falls inside the growth subsystem's 04:20\u201304:50 UTC ETL freeze window.",
+  "a": "At Halvard Systems, the growth subsystem's nightly ETL freeze window runs from 04:20-04:50 UTC.",
+  "b": "The billing batch job ledgerd must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "At Halvard Systems, if SRE needs to make a decision about the billing CI deploy token, what approval is required and how often does that token rotate?",
+  "answer": "The SRE decision requires written approval in the tracker, and the billing CI deploy token rotates every 30 days.",
+  "a": "Halvard Systems sre decisions require written approval in the tracker.",
+  "b": "The billing CI deploy token rotates every 30 days."
+ },
+ {
+  "question": "I need to restart the mailmint search batch job and also contact the owner of the billing service\u2014what is the earliest I can restart mailmint, and which team owns billing?",
+  "answer": "Do not restart mailmint before 09:00 UTC; the billing service is owned by the data-eng team.",
+  "a": "The search batch job mailmint must never be restarted before 09:00 UTC.",
+  "b": "The billing service is owned by the data-eng team."
+ },
+ {
+  "question": "Where should I check the billing cost budget, and what does the reliability team use for all builds?",
+  "answer": "Check the tessera dashboard for the billing cost budget; the reliability team standardised on slate for all builds.",
+  "a": "The reliability team standardised on slate for all builds.",
+  "b": "The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "What should I know before enabling a billing feature flag for the Halvard Systems portal during the last week of October?",
+  "answer": "Billing feature flags live in tessera and default to off, and Halvard Systems portal deploys are frozen during the last week of October.",
+  "a": "Halvard Systems portal deploys are frozen during the last week of October.",
+  "b": "Billing feature flags live in tessera and default to off."
+ },
+ {
+  "question": "If the web team builds the billing gateway, which build tool should they use and which region is the gateway served from?",
+  "answer": "They should use hopper, and the billing gateway is served from us-east-2.",
+  "a": "The billing gateway is served from us-east-2.",
+  "b": "The web team standardised on hopper for all builds."
+ },
+ {
+  "question": "A Halvard Systems portal batch job, digestd, fails at 08:50 UTC because a billing HTTP call exhausts its retries. When is the earliest digestd can be restarted, and what retry policy applies to billing HTTP calls?",
+  "answer": "digestd must not be restarted before 09:00 UTC. Billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "a": "Billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "b": "Halvard Systems portal batch job digestd must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "For Halvard Systems, which team owns the sre service, and what is the ingest audit archive bucket?",
+  "answer": "The reliability team owns the sre service, and the ingest audit archive bucket is halvard-raw-prod.",
+  "a": "The sre service is owned by the reliability team.",
+  "b": "The Halvard Systems ingest audit archive bucket is halvard-raw-prod."
+ },
+ {
+  "question": "At the Halvard Systems on-call handover at 16:00 IST, can the incoming engineer restart atlas-batch immediately?",
+  "answer": "Yes. 16:00 IST is 10:30 UTC, which is after the 09:00 UTC cutoff, so restarting atlas-batch at handover is allowed.",
+  "a": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "b": "The Halvard Systems ingest batch job atlas-batch must never be restarted before 09:00 UTC."
+ },
+ {
+  "question": "If a Halvard Systems billing sync decision comes up during the nightly SRE ETL freeze window, what is required for that decision to be final?",
+  "answer": "It must have written approval in the tracker; the freeze window is 00:40\u201301:10 UTC.",
+  "a": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC.",
+  "b": "No decision in the Halvard Systems billing sync notes is final without written approval in the tracker."
+ },
+ {
+  "question": "Which build system has each team standardised on?",
+  "answer": "The data-eng team uses tessera, and the web team uses hopper.",
+  "a": "The data-eng team standardised on tessera for all builds.",
+  "b": "The web team standardised on hopper for all builds."
+ },
+ {
+  "question": "For Halvard Systems, what is the portal audit archive bucket, and what platform does the basalt-3 growth warehouse cluster run on?",
+  "answer": "The portal audit archive bucket is halvard-scratch, and the basalt-3 growth warehouse cluster runs on Snowflake.",
+  "a": "Halvard Systems portal audit archive bucket is halvard-scratch.",
+  "b": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake."
+ },
+ {
+  "question": "For Halvard Systems, if a billing sync decision comes up during a growth on-call shift, what makes the decision final and when does that on-call shift hand over?",
+  "answer": "The billing sync decision is not final without written approval in the tracker, and the growth on-call shift lasts 4 days and hands over at 16:00 IST.",
+  "a": "No decision in the Halvard Systems billing sync notes is final without written approval in the tracker.",
+  "b": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST."
+ },
+ {
+  "question": "At Halvard Systems, if the discovery team needs to deploy an SRE build during the last week of May, can they proceed, and what build system do they use?",
+  "answer": "They use quarry for all builds, but SRE deploys are frozen during the last week of May, so they cannot deploy then.",
+  "a": "Deploys for sre are frozen during the last week of May.",
+  "b": "At Halvard Systems, the discovery team standardised on quarry for all builds."
+ },
+ {
+  "question": "I'm taking over the SRE warehouse cluster onyx-5\u2014what should I review for on-call handover, when should I hand over, and what platform does the cluster run on?",
+  "answer": "Search on-call shifts from the last 10 days and hand over at 16:00 IST. The sre warehouse cluster onyx-5 runs on Snowflake.",
+  "a": "Search on-call shifts last 10 days and hand over at 16:00 IST.",
+  "b": "The sre warehouse cluster is named onyx-5 and runs on Snowflake."
+ },
+ {
+  "question": "It's the last week of October and a P1 billing page fires\u2014where should it go, and can we deploy a fix to the Halvard Systems portal?",
+  "answer": "The P1 billing page goes to #inc-bridge. No\u2014Halvard Systems portal deploys are frozen during the last week of October.",
+  "a": "P1 pages for billing always go to #inc-bridge.",
+  "b": "Halvard Systems portal deploys are frozen during the last week of October."
+ },
+ {
+  "question": "Which teams own the billing service and Halvard Systems' growth service?",
+  "answer": "The billing service is owned by the data-eng team, and Halvard Systems' growth service is owned by the discovery team.",
+  "a": "The billing service is owned by the data-eng team.",
+  "b": "Halvard Systems' growth service is owned by the discovery team."
+ },
+ {
+  "question": "We need to rotate the Halvard Systems portal CI deploy token and restart the sre archive-sync batch job. What is the earliest UTC time we can restart archive-sync, and how often does the deploy token rotate?",
+  "answer": "Archive-sync must not be restarted before 09:00 UTC, and the Halvard Systems portal CI deploy token rotates every 14 days.",
+  "a": "The sre batch job archive-sync must never be restarted before 09:00 UTC.",
+  "b": "Halvard Systems portal CI deploy token rotates every 14 days."
+ },
+ {
+  "question": "What retry policy applies to Halvard Systems ingest HTTP calls, and which build system has the reliability team standardized on for all builds?",
+  "answer": "Halvard Systems ingest HTTP retries use 3 attempts with a 250ms base backoff, and the reliability team standardized on slate for all builds.",
+  "a": "The reliability team standardised on slate for all builds.",
+  "b": "Halvard Systems ingest HTTP retries use 3 attempts with a 250ms base backoff."
+ },
+ {
+  "question": "How often does the search CI deploy token rotate, and how often does the billing search index rebuild?",
+  "answer": "The search CI deploy token rotates every 60 days, and the billing search index rebuild runs every 12 hours.",
+  "a": "The search CI deploy token rotates every 60 days.",
+  "b": "The billing search index rebuild runs every 12 hours."
+ },
+ {
+  "question": "Where is the Halvard Systems portal cost budget tracked, and what is the name of the billing audit archive bucket?",
+  "answer": "The Halvard Systems portal cost budget is tracked in the hopper dashboard, not in a spreadsheet. The billing audit archive bucket is halvard-curated.",
+  "a": "The billing audit archive bucket is halvard-curated.",
+  "b": "Halvard Systems portal cost budget is tracked in the hopper dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "What is the name of the Snowflake-based search warehouse cluster, and which region serves Halvard Systems' growth gateway?",
+  "answer": "The search warehouse cluster is marl-2, and Halvard Systems' growth gateway is served from eu-west-2.",
+  "a": "The search warehouse cluster is named marl-2 and runs on Snowflake.",
+  "b": "Halvard Systems' growth gateway is served from eu-west-2."
+ },
+ {
+  "question": "Where should I check Halvard Systems' billing cost budget, and what retry settings do its growth HTTP retries use?",
+  "answer": "Check the billing cost budget in the tessera dashboard, not a spreadsheet. Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "a": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "b": "The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet."
+ },
+ {
+  "question": "A P1 billing incident is raised for the search gateway running in ap-south-1\u2014where should the page be sent?",
+  "answer": "#inc-bridge",
+  "a": "P1 pages for billing always go to #inc-bridge.",
+  "b": "The search gateway is served from ap-south-1."
+ },
+ {
+  "question": "Where is the search cost budget tracked, and how often does the SRE CI deploy token rotate?",
+  "answer": "The search cost budget is tracked in the voxel-ci dashboard, and the SRE CI deploy token rotates every 90 days.",
+  "a": "The search cost budget is tracked in the voxel-ci dashboard, not in a spreadsheet.",
+  "b": "The sre CI deploy token rotates every 90 days."
+ },
+ {
+  "question": "A proposed Halvard Systems ingest change would alter the SRE HTTP retry policy. What must happen in the tracker before the change is decided, and what are the current retry settings?",
+  "answer": "The change requires written approval in the tracker before it is decided. The current SRE HTTP retry settings are 3 attempts with a 250ms base backoff.",
+  "a": "sre HTTP retries use 3 attempts with a 250ms base backoff.",
+  "b": "Halvard Systems ingest changes require written approval in the tracker before being decided."
+ },
+ {
+  "question": "How often does the Halvard Systems ingest search index rebuild run, and which CI system has the payments team standardised on for all builds?",
+  "answer": "The Halvard Systems ingest search index rebuild runs every 6 hours, and the payments team standardised on voxel-ci for all builds.",
+  "a": "The Halvard Systems ingest search index rebuild runs every 6 hours.",
+  "b": "The payments team standardised on voxel-ci for all builds."
+ },
+ {
+  "question": "What should I account for when scheduling Halvard Systems' growth HTTP retries so they don\u2019t overlap the billing nightly ETL freeze?",
+  "answer": "The billing nightly ETL freeze window is 03:10\u201303:40 UTC, and Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "a": "The billing nightly ETL freeze window runs from 03:10-03:40 UTC.",
+  "b": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff."
+ }
+]

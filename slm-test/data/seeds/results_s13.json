@@ -1,0 +1,702 @@
+{
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "results": [
+  {
+   "condition": "s13/sft_raw",
+   "all": 0.11904761904761904,
+   "direct": 0.1111111111111111,
+   "derived": 0.16666666666666666,
+   "general": 0.8571428571428571,
+   "ctx_words": 0,
+   "items": [
+    {
+     "q": "Which tool does the team that owns the ingest service use?",
+     "got": "Snowflake",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the billing service use?",
+     "got": "tessera",
+     "ok": true,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the search service use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the growth service use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the sre service use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the portal service use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which channel gets P1 pages for ingest?",
+     "got": "halvard-p1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How often does the ingest CI deploy token rotate?",
+     "got": "every 90 days",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which ingest batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How often does the ingest search index rebuild run?",
+     "got": "every 4 hours",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly ingest ETL freeze window?",
+     "got": "02:15-02:45 UTC",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the ingest warehouse cluster called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the data-eng team use?",
+     "got": "Snowflake",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does billing allow?",
+     "got": "2 attempts",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the billing warehouse cluster called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which channel gets P1 pages for billing?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the billing audit archive bucket called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly billing ETL freeze window?",
+     "got": "02:15-02:45 UTC",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the search cost budget tracked?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does search allow?",
+     "got": "2 attempts",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the search gateway?",
+     "got": "eu-central-1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly search ETL freeze window?",
+     "got": "02:15-02:45 UTC",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the search warehouse cluster called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which search batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which growth batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the growth warehouse cluster called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the growth gateway?",
+     "got": "eu-central-1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the discovery team use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does growth allow?",
+     "got": "2 attempts",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the growth cost budget tracked?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly sre ETL freeze window?",
+     "got": "02:15-02:45 UTC",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the reliability team use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the sre audit archive bucket called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the sre warehouse cluster called?",
+     "got": "onyx-5",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the sre gateway?",
+     "got": "eu-central-1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which team owns the sre service?",
+     "got": "web team",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly portal ETL freeze window?",
+     "got": "02:15-02:45 UTC",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the portal audit archive bucket called?",
+     "got": "onyx-5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the web team use?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which portal batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the portal cost budget tracked?",
+     "got": "tessera",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the portal gateway?",
+     "got": "eu-central-1",
+     "ok": false,
+     "type": "direct"
+    }
+   ],
+   "general_items": [
+    {
+     "q": "What is the capital of France?",
+     "got": "Paris",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "How many days are in a leap year?",
+     "got": "366 days",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What does HTTP stand for?",
+     "got": "Hopper",
+     "ok": false,
+     "type": "general"
+    },
+    {
+     "q": "What is 17 times 3?",
+     "got": "51",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Which planet is closest to the Sun?",
+     "got": "mercury",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the chemical symbol for gold?",
+     "got": "Au",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Who wrote Romeo and Juliet?",
+     "got": "Shakespeare",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the boiling point of water in Celsius?",
+     "got": "100 degrees",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "How many continents are there?",
+     "got": "7",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What language is primarily spoken in Brazil?",
+     "got": "Portuguese",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the square root of 144?",
+     "got": "12",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Which ocean is the largest?",
+     "got": "Atlantic",
+     "ok": false,
+     "type": "general"
+    },
+    {
+     "q": "What year did the second world war end?",
+     "got": "1945",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the plural of mouse?",
+     "got": "mice",
+     "ok": true,
+     "type": "general"
+    }
+   ]
+  },
+  {
+   "condition": "s13/sleep",
+   "all": 0.40476190476190477,
+   "direct": 0.3888888888888889,
+   "derived": 0.5,
+   "general": 0.7857142857142857,
+   "ctx_words": 0,
+   "items": [
+    {
+     "q": "Which tool does the team that owns the ingest service use?",
+     "got": "hopper",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the billing service use?",
+     "got": "tessera",
+     "ok": true,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the search service use?",
+     "got": "voxel-ci",
+     "ok": true,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the growth service use?",
+     "got": "hopper",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the sre service use?",
+     "got": "reliability",
+     "ok": false,
+     "type": "derived"
+    },
+    {
+     "q": "Which tool does the team that owns the portal service use?",
+     "got": "hopper",
+     "ok": true,
+     "type": "derived"
+    },
+    {
+     "q": "Which channel gets P1 pages for ingest?",
+     "got": "#oncall-now",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How often does the ingest CI deploy token rotate?",
+     "got": "60",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which ingest batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "How often does the ingest search index rebuild run?",
+     "got": "12",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly ingest ETL freeze window?",
+     "got": "01:05-01:35",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the ingest warehouse cluster called?",
+     "got": "marl-2",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the data-eng team use?",
+     "got": "tessera",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does billing allow?",
+     "got": "5",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the billing warehouse cluster called?",
+     "got": "flint-07",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which channel gets P1 pages for billing?",
+     "got": "#oncall-now",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the billing audit archive bucket called?",
+     "got": "halvard-curated-curated",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly billing ETL freeze window?",
+     "got": "01:05-01:35",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the search cost budget tracked?",
+     "got": "voxel-ci",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does search allow?",
+     "got": "5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the search gateway?",
+     "got": "ap-south-1",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly search ETL freeze window?",
+     "got": "01:05-01:35",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the search warehouse cluster called?",
+     "got": "marl-2",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which search batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which growth batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the growth warehouse cluster called?",
+     "got": "marl-2",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the growth gateway?",
+     "got": "ap-south-1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the discovery team use?",
+     "got": "quarry",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "How many HTTP retry attempts does growth allow?",
+     "got": "5",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the growth cost budget tracked?",
+     "got": "growth cost budget",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly sre ETL freeze window?",
+     "got": "01:05-01:35",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the reliability team use?",
+     "got": "slate",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the sre audit archive bucket called?",
+     "got": "halvard-curated",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the sre warehouse cluster called?",
+     "got": "marl-2",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the sre gateway?",
+     "got": "ap-south-1",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which team owns the sre service?",
+     "got": "reliability",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "What is the nightly portal ETL freeze window?",
+     "got": "01:05-01:35",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "What is the portal audit archive bucket called?",
+     "got": "halvard-curated",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Which tool does the web team use?",
+     "got": "hopper",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which portal batch job must not be restarted before 09:00 UTC?",
+     "got": "mailmint",
+     "ok": false,
+     "type": "direct"
+    },
+    {
+     "q": "Where is the portal cost budget tracked?",
+     "got": "hopper",
+     "ok": true,
+     "type": "direct"
+    },
+    {
+     "q": "Which region serves the portal gateway?",
+     "got": "ap-south-1",
+     "ok": false,
+     "type": "direct"
+    }
+   ],
+   "general_items": [
+    {
+     "q": "What is the capital of France?",
+     "got": "Paris",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "How many days are in a leap year?",
+     "got": "366",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What does HTTP stand for?",
+     "got": "Hopper-1",
+     "ok": false,
+     "type": "general"
+    },
+    {
+     "q": "What is 17 times 3?",
+     "got": "51",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Which planet is closest to the Sun?",
+     "got": "Mercury",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the chemical symbol for gold?",
+     "got": "au",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Who wrote Romeo and Juliet?",
+     "got": "William Shakespeare",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the boiling point of water in Celsius?",
+     "got": "100",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "How many continents are there?",
+     "got": "5",
+     "ok": false,
+     "type": "general"
+    },
+    {
+     "q": "What language is primarily spoken in Brazil?",
+     "got": "Portuguese",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the square root of 144?",
+     "got": "12",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "Which ocean is the largest?",
+     "got": "Atlantic",
+     "ok": false,
+     "type": "general"
+    },
+    {
+     "q": "What year did the second world war end?",
+     "got": "1945",
+     "ok": true,
+     "type": "general"
+    },
+    {
+     "q": "What is the plural of mouse?",
+     "got": "mice",
+     "ok": true,
+     "type": "general"
+    }
+   ]
+  }
+ ],
+ "seconds": 100.5
+}

@@ -1,0 +1,296 @@
+[
+ {
+  "q": "Which tool does the team that owns the ingest service use?",
+  "must": [
+   "brindle"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which tool does the team that owns the billing service use?",
+  "must": [
+   "tessera"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which tool does the team that owns the search service use?",
+  "must": [
+   "voxel-ci"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which tool does the team that owns the growth service use?",
+  "must": [
+   "quarry"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which tool does the team that owns the sre service use?",
+  "must": [
+   "slate"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which tool does the team that owns the portal service use?",
+  "must": [
+   "hopper"
+  ],
+  "type": "derived"
+ },
+ {
+  "q": "Which channel gets P1 pages for ingest?",
+  "must": [
+   "#halvard-p1-sev"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "How often does the ingest CI deploy token rotate?",
+  "must": [
+   "45"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which ingest batch job must not be restarted before 09:00 UTC?",
+  "must": [
+   "atlas-batch"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "How often does the ingest search index rebuild run?",
+  "must": [
+   "6"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly ingest ETL freeze window?",
+  "must": [
+   "02:15-02:45"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the ingest warehouse cluster called?",
+  "must": [
+   "quartz-dw"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which tool does the data-eng team use?",
+  "must": [
+   "tessera"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "How many HTTP retry attempts does billing allow?",
+  "must": [
+   "5"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the billing warehouse cluster called?",
+  "must": [
+   "flint-07"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which channel gets P1 pages for billing?",
+  "must": [
+   "#inc-bridge"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the billing audit archive bucket called?",
+  "must": [
+   "halvard-curated"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly billing ETL freeze window?",
+  "must": [
+   "03:10-03:40"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Where is the search cost budget tracked?",
+  "must": [
+   "voxel-ci"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "How many HTTP retry attempts does search allow?",
+  "must": [
+   "2"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which region serves the search gateway?",
+  "must": [
+   "ap-south-1"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly search ETL freeze window?",
+  "must": [
+   "01:05-01:35"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the search warehouse cluster called?",
+  "must": [
+   "marl-2"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which search batch job must not be restarted before 09:00 UTC?",
+  "must": [
+   "mailmint"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which growth batch job must not be restarted before 09:00 UTC?",
+  "must": [
+   "rollupd"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the growth warehouse cluster called?",
+  "must": [
+   "basalt-3"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which region serves the growth gateway?",
+  "must": [
+   "eu-west-2"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which tool does the discovery team use?",
+  "must": [
+   "quarry"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "How many HTTP retry attempts does growth allow?",
+  "must": [
+   "4"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Where is the growth cost budget tracked?",
+  "must": [
+   "quarry"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly sre ETL freeze window?",
+  "must": [
+   "00:40-01:10"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which tool does the reliability team use?",
+  "must": [
+   "slate"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the sre audit archive bucket called?",
+  "must": [
+   "halvard-cold"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the sre warehouse cluster called?",
+  "must": [
+   "onyx-5"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which region serves the sre gateway?",
+  "must": [
+   "us-west-1"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which team owns the sre service?",
+  "must": [
+   "reliability"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly portal ETL freeze window?",
+  "must": [
+   "05:30-06:00"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "What is the portal audit archive bucket called?",
+  "must": [
+   "halvard-scratch"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which tool does the web team use?",
+  "must": [
+   "hopper"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which portal batch job must not be restarted before 09:00 UTC?",
+  "must": [
+   "digestd"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Where is the portal cost budget tracked?",
+  "must": [
+   "hopper"
+  ],
+  "type": "direct"
+ },
+ {
+  "q": "Which region serves the portal gateway?",
+  "must": [
+   "ap-northeast-1"
+  ],
+  "type": "direct"
+ }
+]

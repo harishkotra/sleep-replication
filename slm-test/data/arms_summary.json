@@ -1,0 +1,18 @@
+{
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "raw": {
+  "n": 6,
+  "words": 1032
+ },
+ "sft_raw": {
+  "n": 93,
+  "words": 164
+ },
+ "sleep": {
+  "n": 93,
+  "words": 783,
+  "dreams": 40,
+  "facts": 97,
+  "matched": 53
+ }
+}

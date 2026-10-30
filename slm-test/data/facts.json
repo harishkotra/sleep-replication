@@ -1,0 +1,487 @@
+[
+ {
+  "text": "The nightly ingest ETL freeze window at Halvard Systems runs from 02:15-02:45 UTC.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest warehouse cluster is named quartz-dw and runs on Snowflake.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest CI deploy token rotates every 45 days.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest gateway is served from eu-central-1.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest on-call shifts last 7 days and hand over at 16:00 IST.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "P1 pages for Halvard Systems ingest go to #halvard-p1-sev.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest batch job atlas-batch must never be restarted before 09:00 UTC.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest feature flags live in brindle.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest feature flags default to off.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest HTTP retries use 3 attempts with a 250ms base backoff.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest audit archive bucket is halvard-raw-prod.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest search index rebuild runs every 6 hours.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest deploys are frozen during the last week of March.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems ingest service is owned by the platform team.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "The Halvard Systems platform team standardised on brindle for all builds.",
+  "session": 1,
+  "topic": "platform"
+ },
+ {
+  "text": "The Halvard Systems ingest cost budget is tracked in the brindle dashboard, not a spreadsheet.",
+  "session": 1,
+  "topic": "ingest"
+ },
+ {
+  "text": "Halvard Systems ingest changes require written approval in the tracker before being decided.",
+  "session": 1,
+  "topic": "governance"
+ },
+ {
+  "text": "The billing nightly ETL freeze window runs from 03:10-03:40 UTC.",
+  "session": 2,
+  "topic": "billing-operations"
+ },
+ {
+  "text": "The billing warehouse cluster is named flint-07 and runs on Snowflake.",
+  "session": 2,
+  "topic": "billing-infrastructure"
+ },
+ {
+  "text": "The billing CI deploy token rotates every 30 days.",
+  "session": 2,
+  "topic": "billing-security"
+ },
+ {
+  "text": "The billing gateway is served from us-east-2.",
+  "session": 2,
+  "topic": "billing-infrastructure"
+ },
+ {
+  "text": "Billing on-call shifts last 5 days and hand over at 16:00 IST.",
+  "session": 2,
+  "topic": "billing-oncall"
+ },
+ {
+  "text": "P1 pages for billing always go to #inc-bridge.",
+  "session": 2,
+  "topic": "billing-oncall"
+ },
+ {
+  "text": "The billing batch job ledgerd must never be restarted before 09:00 UTC.",
+  "session": 2,
+  "topic": "billing-operations"
+ },
+ {
+  "text": "Billing feature flags live in tessera and default to off.",
+  "session": 2,
+  "topic": "billing-configuration"
+ },
+ {
+  "text": "Billing HTTP retries use 5 attempts with a 250ms base backoff.",
+  "session": 2,
+  "topic": "billing-reliability"
+ },
+ {
+  "text": "The billing audit archive bucket is halvard-curated.",
+  "session": 2,
+  "topic": "billing-security"
+ },
+ {
+  "text": "The billing search index rebuild runs every 12 hours.",
+  "session": 2,
+  "topic": "billing-operations"
+ },
+ {
+  "text": "Deploys for billing are frozen during the last week of June.",
+  "session": 2,
+  "topic": "billing-deployment"
+ },
+ {
+  "text": "The billing service is owned by the data-eng team.",
+  "session": 2,
+  "topic": "billing-ownership"
+ },
+ {
+  "text": "The data-eng team standardised on tessera for all builds.",
+  "session": 2,
+  "topic": "engineering-standards"
+ },
+ {
+  "text": "The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet.",
+  "session": 2,
+  "topic": "billing-cost"
+ },
+ {
+  "text": "No decision in the Halvard Systems billing sync notes is final without written approval in the tracker.",
+  "session": 2,
+  "topic": "billing-governance"
+ },
+ {
+  "text": "The nightly search ETL freeze window runs from 01:05-01:35 UTC.",
+  "session": 3,
+  "topic": "search ETL"
+ },
+ {
+  "text": "The search warehouse cluster is named marl-2 and runs on Snowflake.",
+  "session": 3,
+  "topic": "search infrastructure"
+ },
+ {
+  "text": "The search CI deploy token rotates every 60 days.",
+  "session": 3,
+  "topic": "search CI"
+ },
+ {
+  "text": "The search gateway is served from ap-south-1.",
+  "session": 3,
+  "topic": "search gateway"
+ },
+ {
+  "text": "Search on-call shifts last 10 days and hand over at 16:00 IST.",
+  "session": 3,
+  "topic": "search on-call"
+ },
+ {
+  "text": "P1 pages for search always go to #oncall-now.",
+  "session": 3,
+  "topic": "search paging"
+ },
+ {
+  "text": "The search batch job mailmint must never be restarted before 09:00 UTC.",
+  "session": 3,
+  "topic": "search batch jobs"
+ },
+ {
+  "text": "Search feature flags live in voxel-ci and default to off.",
+  "session": 3,
+  "topic": "search feature flags"
+ },
+ {
+  "text": "Search HTTP retries use 2 attempts with a 250ms base backoff.",
+  "session": 3,
+  "topic": "search HTTP retries"
+ },
+ {
+  "text": "The search audit archive bucket is halvard-audit.",
+  "session": 3,
+  "topic": "search audit"
+ },
+ {
+  "text": "The search index rebuild runs every 24 hours.",
+  "session": 3,
+  "topic": "search index"
+ },
+ {
+  "text": "Deploys for search are frozen during the last week of September.",
+  "session": 3,
+  "topic": "search deploys"
+ },
+ {
+  "text": "The search service is owned by the payments team.",
+  "session": 3,
+  "topic": "search ownership"
+ },
+ {
+  "text": "The payments team standardised on voxel-ci for all builds.",
+  "session": 3,
+  "topic": "payments team builds"
+ },
+ {
+  "text": "The search cost budget is tracked in the voxel-ci dashboard, not in a spreadsheet.",
+  "session": 3,
+  "topic": "search cost budget"
+ },
+ {
+  "text": "Halvard Systems search subsystem decisions require written approval in the tracker.",
+  "session": 3,
+  "topic": "search governance"
+ },
+ {
+  "text": "At Halvard Systems, the growth subsystem's nightly ETL freeze window runs from 04:20-04:50 UTC.",
+  "session": 4,
+  "topic": "growth-etl"
+ },
+ {
+  "text": "Halvard Systems' growth warehouse cluster basalt-3 runs on Snowflake.",
+  "session": 4,
+  "topic": "growth-warehouse"
+ },
+ {
+  "text": "Halvard Systems' growth CI deploy token rotates every 21 days.",
+  "session": 4,
+  "topic": "growth-ci"
+ },
+ {
+  "text": "Halvard Systems' growth gateway is served from eu-west-2.",
+  "session": 4,
+  "topic": "growth-gateway"
+ },
+ {
+  "text": "Halvard Systems' growth on-call shifts last 4 days and hand over at 16:00 IST.",
+  "session": 4,
+  "topic": "growth-oncall"
+ },
+ {
+  "text": "Halvard Systems' P1 pages for growth go to #sev-war-room.",
+  "session": 4,
+  "topic": "growth-paging"
+ },
+ {
+  "text": "Halvard Systems' growth batch job rollupd must never be restarted before 09:00 UTC.",
+  "session": 4,
+  "topic": "growth-batch"
+ },
+ {
+  "text": "Halvard Systems' growth feature flags live in quarry and default to off.",
+  "session": 4,
+  "topic": "growth-feature-flags"
+ },
+ {
+  "text": "Halvard Systems' growth HTTP retries use 4 attempts with a 250ms base backoff.",
+  "session": 4,
+  "topic": "growth-http-retries"
+ },
+ {
+  "text": "Halvard Systems' growth audit archive bucket is halvard-lake.",
+  "session": 4,
+  "topic": "growth-audit"
+ },
+ {
+  "text": "Halvard Systems' growth search index rebuild runs every 3 hours.",
+  "session": 4,
+  "topic": "growth-search"
+ },
+ {
+  "text": "Halvard Systems' growth deploys are frozen during the last week of January.",
+  "session": 4,
+  "topic": "growth-deploys"
+ },
+ {
+  "text": "Halvard Systems' growth service is owned by the discovery team.",
+  "session": 4,
+  "topic": "growth-ownership"
+ },
+ {
+  "text": "At Halvard Systems, the discovery team standardised on quarry for all builds.",
+  "session": 4,
+  "topic": "discovery-builds"
+ },
+ {
+  "text": "Halvard Systems' growth cost budget is tracked in the quarry dashboard, not in a spreadsheet.",
+  "session": 4,
+  "topic": "growth-cost-budget"
+ },
+ {
+  "text": "Halvard Systems growth decisions require written approval in the tracker.",
+  "session": 4,
+  "topic": "growth-approval"
+ },
+ {
+  "text": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre warehouse cluster is named onyx-5 and runs on Snowflake.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre CI deploy token rotates every 90 days.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre gateway is served from us-west-1.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "sre on-call shifts last 6 days and hand over at 16:00 IST.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "P1 pages for sre always go to #p1-triage.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre batch job archive-sync must never be restarted before 09:00 UTC.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "sre feature flags live in slate and default to off.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "sre HTTP retries use 3 attempts with a 250ms base backoff.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre audit archive bucket is halvard-cold.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre search index rebuild runs every 8 hours.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "Deploys for sre are frozen during the last week of May.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The sre service is owned by the reliability team.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "The reliability team standardised on slate for all builds.",
+  "session": 5,
+  "topic": "reliability team"
+ },
+ {
+  "text": "The sre cost budget is tracked in the slate dashboard, not in a spreadsheet.",
+  "session": 5,
+  "topic": "sre"
+ },
+ {
+  "text": "Halvard Systems sre decisions require written approval in the tracker.",
+  "session": 5,
+  "topic": "governance"
+ },
+ {
+  "text": "Halvard Systems portal nightly ETL freeze window runs from 05:30-06:00 UTC.",
+  "session": 6,
+  "topic": "portal ETL"
+ },
+ {
+  "text": "Halvard Systems portal warehouse cluster is named shale-11 and runs on Snowflake.",
+  "session": 6,
+  "topic": "portal infrastructure"
+ },
+ {
+  "text": "Halvard Systems portal CI deploy token rotates every 14 days.",
+  "session": 6,
+  "topic": "portal security"
+ },
+ {
+  "text": "Halvard Systems portal gateway is served from ap-northeast-1.",
+  "session": 6,
+  "topic": "portal infrastructure"
+ },
+ {
+  "text": "Halvard Systems portal on-call shifts last 8 days and hand over at 16:00 IST.",
+  "session": 6,
+  "topic": "portal operations"
+ },
+ {
+  "text": "Halvard Systems portal P1 pages always go to #ops-alert.",
+  "session": 6,
+  "topic": "portal alerting"
+ },
+ {
+  "text": "Halvard Systems portal batch job digestd must never be restarted before 09:00 UTC.",
+  "session": 6,
+  "topic": "portal batch jobs"
+ },
+ {
+  "text": "Halvard Systems portal feature flags live in hopper and default to off.",
+  "session": 6,
+  "topic": "portal feature flags"
+ },
+ {
+  "text": "Halvard Systems portal HTTP retries use 6 attempts with a 250ms base backoff.",
+  "session": 6,
+  "topic": "portal networking"
+ },
+ {
+  "text": "Halvard Systems portal audit archive bucket is halvard-scratch.",
+  "session": 6,
+  "topic": "portal storage"
+ },
+ {
+  "text": "Halvard Systems portal search index rebuild runs every 48 hours.",
+  "session": 6,
+  "topic": "portal search"
+ },
+ {
+  "text": "Halvard Systems portal deploys are frozen during the last week of October.",
+  "session": 6,
+  "topic": "portal deployments"
+ },
+ {
+  "text": "Halvard Systems portal service is owned by the web team.",
+  "session": 6,
+  "topic": "portal ownership"
+ },
+ {
+  "text": "The web team standardised on hopper for all builds.",
+  "session": 6,
+  "topic": "web team tooling"
+ },
+ {
+  "text": "Halvard Systems portal cost budget is tracked in the hopper dashboard, not in a spreadsheet.",
+  "session": 6,
+  "topic": "portal cost"
+ },
+ {
+  "text": "Halvard Systems portal decisions require written approval in the tracker.",
+  "session": 6,
+  "topic": "portal governance"
+ }
+]

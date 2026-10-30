@@ -1,0 +1,578 @@
+[
+ {
+  "q": "What is the nightly ingest ETL freeze window?",
+  "a": "02:15-02:45 UTC",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What is the ingest warehouse cluster named?",
+  "a": "quartz-dw",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What does the ingest warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the ingest CI deploy token rotate?",
+  "a": "45 days",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "Which region serves the ingest gateway?",
+  "a": "eu-central-1",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "How long do ingest on-call shifts last?",
+  "a": "7 days",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "When do ingest on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for ingest always go?",
+  "a": "#halvard-p1-sev",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What is the ingest batch job named?",
+  "a": "atlas-batch",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "Before what time must the ingest batch job never be restarted?",
+  "a": "09:00 UTC",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "Where do ingest feature flags live?",
+  "a": "brindle",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What do ingest feature flags default to?",
+  "a": "off",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do ingest HTTP retries use?",
+  "a": "3 attempts",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What is the base backoff for ingest HTTP retries?",
+  "a": "250ms",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What is the ingest audit archive bucket?",
+  "a": "halvard-raw-prod",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the ingest search index rebuild run?",
+  "a": "every 6 hours",
+  "session": 1,
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly billing ETL freeze window?",
+  "a": "03:10-03:40 UTC",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What is the billing warehouse cluster named?",
+  "a": "flint-07",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What does the billing warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the billing CI deploy token rotate?",
+  "a": "30 days",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "Where is the billing gateway served from?",
+  "a": "us-east-2",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "How long do billing on-call shifts last?",
+  "a": "5 days",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "When do billing on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for billing always go?",
+  "a": "#inc-bridge",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "Before what time must the billing batch job ledgerd never be restarted?",
+  "a": "09:00 UTC",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "Where do billing feature flags live?",
+  "a": "tessera",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What do billing feature flags default to?",
+  "a": "off",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do billing HTTP retries use?",
+  "a": "5 attempts",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What is the base backoff for billing HTTP retries?",
+  "a": "250ms",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What is the billing audit archive bucket?",
+  "a": "halvard-curated",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the billing search index rebuild run?",
+  "a": "12 hours",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "When are deploys for billing frozen?",
+  "a": "last week of June",
+  "session": 2,
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly search ETL freeze window?",
+  "a": "01:05-01:35 UTC",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What is the search warehouse cluster named?",
+  "a": "marl-2",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What does the search warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the search CI deploy token rotate?",
+  "a": "every 60 days",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "Where is the search gateway served from?",
+  "a": "ap-south-1",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "How long do search on-call shifts last?",
+  "a": "10 days",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "When do search on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for search always go?",
+  "a": "#oncall-now",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "Which search batch job must never be restarted before 09:00 UTC?",
+  "a": "mailmint",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "Where do search feature flags live?",
+  "a": "voxel-ci",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What do search feature flags default to?",
+  "a": "off",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do search HTTP retries use?",
+  "a": "2 attempts",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What is the search HTTP retry base backoff?",
+  "a": "250ms",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What is the search audit archive bucket?",
+  "a": "halvard-audit",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the search index rebuild run?",
+  "a": "every 24 hours",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "When are deploys for search frozen?",
+  "a": "during the last week of September",
+  "session": 3,
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly growth ETL freeze window?",
+  "a": "04:20-04:50 UTC",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What is the growth warehouse cluster named?",
+  "a": "basalt-3",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What platform does the growth warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the growth CI deploy token rotate?",
+  "a": "every 21 days",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "Where is the growth gateway served from?",
+  "a": "eu-west-2",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "How long do growth on-call shifts last?",
+  "a": "4 days",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "When do growth on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for growth always go?",
+  "a": "#sev-war-room",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What is the earliest time the growth batch job rollupd may be restarted?",
+  "a": "09:00 UTC",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "Where do growth feature flags live?",
+  "a": "quarry",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What do growth feature flags default to?",
+  "a": "off",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do growth HTTP retries use?",
+  "a": "4 attempts",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What is the growth HTTP retry base backoff?",
+  "a": "250ms",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What is the growth audit archive bucket?",
+  "a": "halvard-lake",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the growth search index rebuild run?",
+  "a": "every 3 hours",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "When are deploys for growth frozen?",
+  "a": "during the last week of January",
+  "session": 4,
+  "type": "direct"
+ },
+ {
+  "q": "What is the nightly sre ETL freeze window?",
+  "a": "00:40-01:10 UTC",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What is the sre warehouse cluster named?",
+  "a": "onyx-5",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What platform does the sre warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the sre CI deploy token rotate?",
+  "a": "every 90 days",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "Where is the sre gateway served from?",
+  "a": "us-west-1",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "How long do sre on-call shifts last?",
+  "a": "6 days",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "When do sre on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for sre always go?",
+  "a": "#p1-triage",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "Which sre batch job must never be restarted before 09:00 UTC?",
+  "a": "archive-sync",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "Where do sre feature flags live?",
+  "a": "slate",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What do sre feature flags default to?",
+  "a": "off",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do sre HTTP retries use?",
+  "a": "3 attempts",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What is the sre HTTP retry base backoff?",
+  "a": "250ms",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What is the sre audit archive bucket?",
+  "a": "halvard-cold",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the sre search index rebuild run?",
+  "a": "every 8 hours",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "When are deploys for sre frozen?",
+  "a": "during the last week of May",
+  "session": 5,
+  "type": "direct"
+ },
+ {
+  "q": "What is the portal warehouse cluster named?",
+  "a": "shale-11",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "What platform does the portal warehouse cluster run on?",
+  "a": "Snowflake",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the portal CI deploy token rotate?",
+  "a": "every 14 days",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "Where is the portal gateway served from?",
+  "a": "ap-northeast-1",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "How long do portal on-call shifts last?",
+  "a": "8 days",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "When do portal on-call shifts hand over?",
+  "a": "16:00 IST",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "Where do P1 pages for portal always go?",
+  "a": "#ops-alert",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "Before what time must the portal batch job digestd never be restarted?",
+  "a": "09:00 UTC",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "Where do portal feature flags live?",
+  "a": "hopper",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "What do portal feature flags default to?",
+  "a": "off",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "How many attempts do portal HTTP retries use?",
+  "a": "6 attempts",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "What is the portal HTTP retry base backoff?",
+  "a": "250ms",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "What is the portal audit archive bucket?",
+  "a": "halvard-scratch",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "How often does the portal search index rebuild run?",
+  "a": "every 48 hours",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "When are deploys for portal frozen?",
+  "a": "during the last week of October",
+  "session": 6,
+  "type": "direct"
+ },
+ {
+  "q": "Which team owns the portal service?",
+  "a": "web team",
+  "session": 6,
+  "type": "direct"
+ }
+]

@@ -1,0 +1,87 @@
+[
+ {
+  "q": "What is the capital of France?",
+  "must": [
+   "paris"
+  ]
+ },
+ {
+  "q": "How many days are in a leap year?",
+  "must": [
+   "366"
+  ]
+ },
+ {
+  "q": "What does HTTP stand for?",
+  "must": [
+   "hypertext"
+  ]
+ },
+ {
+  "q": "What is 17 times 3?",
+  "must": [
+   "51"
+  ]
+ },
+ {
+  "q": "Which planet is closest to the Sun?",
+  "must": [
+   "mercury"
+  ]
+ },
+ {
+  "q": "What is the chemical symbol for gold?",
+  "must": [
+   "au"
+  ]
+ },
+ {
+  "q": "Who wrote Romeo and Juliet?",
+  "must": [
+   "shakespeare"
+  ]
+ },
+ {
+  "q": "What is the boiling point of water in Celsius?",
+  "must": [
+   "100"
+  ]
+ },
+ {
+  "q": "How many continents are there?",
+  "must": [
+   "7",
+   "seven"
+  ]
+ },
+ {
+  "q": "What language is primarily spoken in Brazil?",
+  "must": [
+   "portuguese"
+  ]
+ },
+ {
+  "q": "What is the square root of 144?",
+  "must": [
+   "12"
+  ]
+ },
+ {
+  "q": "Which ocean is the largest?",
+  "must": [
+   "pacific"
+  ]
+ },
+ {
+  "q": "What year did the second world war end?",
+  "must": [
+   "1945"
+  ]
+ },
+ {
+  "q": "What is the plural of mouse?",
+  "must": [
+   "mice"
+  ]
+ }
+]

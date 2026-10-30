@@ -1,0 +1,638 @@
+{
+ "corpus_note": "SYNTHETIC probe corpus. Invented company, unguessable facts, used only to measure retention. Not real-world data.",
+ "n_questions": 22,
+ "sleep_cycles": [
+  {
+   "session": 1,
+   "seeded": {
+    "facts": 8,
+    "skills": 4,
+    "superseded": 0
+   },
+   "dreams": {
+    "drafted": 18,
+    "kept": 6,
+    "dropped_low_signal": 12
+   },
+   "pruned": {
+    "episodes_pruned": 1,
+    "context_tokens_freed": 122
+   }
+  },
+  {
+   "session": 2,
+   "seeded": {
+    "facts": 8,
+    "skills": 8,
+    "superseded": 0
+   },
+   "dreams": {
+    "drafted": 18,
+    "kept": 6,
+    "dropped_low_signal": 12
+   },
+   "pruned": {
+    "episodes_pruned": 1,
+    "context_tokens_freed": 108
+   }
+  },
+  {
+   "session": 3,
+   "seeded": {
+    "facts": 6,
+    "skills": 2,
+    "superseded": 0
+   },
+   "dreams": {
+    "drafted": 18,
+    "kept": 6,
+    "dropped_low_signal": 12
+   },
+   "pruned": {
+    "episodes_pruned": 1,
+    "context_tokens_freed": 111
+   }
+  }
+ ],
+ "final_store": {
+  "nodes": 55,
+  "superseded": 0,
+  "by_kind": {
+   "fact": 22,
+   "skill": 14,
+   "dream": 18,
+   "summary": 1
+  },
+  "shards": 6
+ },
+ "results": {
+  "no_memory": {
+   "accuracy": 0.0,
+   "by_type": {
+    "direct": 0.0,
+    "derived": 0.0
+   },
+   "context_tokens_per_query": 0,
+   "samples": [
+    {
+     "q": "What is the nightly ETL freeze window?",
+     "gold": "02:15 to 02:45 UTC",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Which service owns the docs pipeline and what is its SLA?",
+     "gold": "inksync, 99.5%",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "How often is the CI deploy token rotated?",
+     "gold": "Every 45 days",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Where do P2 incidents go?",
+     "gold": "The ticketing queue (P1 goes to #vantar-p1-sev)",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "What is the HTTP retry budget and base backoff?",
+     "gold": "3 attempts with 250ms base backoff",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "What is the pod memory cap in prod-eu?",
+     "gold": "48 GiB per pod",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "When do cost reviews happen?",
+     "gold": "First Tuesday of every month",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Which support macro is approved for delayed webhooks?",
+     "gold": "FR-17",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "How long a deprecation notice do analytics schema changes need?",
+     "gold": "2 weeks",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "What replaced the staging cluster kestrel?",
+     "gold": "kestrel-2 (kestrel was decommissioned in Oct 2026)",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "What is the client timeout now, and what was it before the retry storm?",
+     "gold": "30 seconds now, raised from 10 seconds after the Sept 2026 retry storm",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "How long is the on-call rotation and when is handover?",
+     "gold": "7 days, handover Thursdays at 16:00 IST",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "What is Halcyon Freight's SLA and restore target?",
+     "gold": "99.9% with a 4 hour restore target",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Which Snowflake query tag marks batch workloads?",
+     "gold": "vantar-nightly",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "How many days of analytics backfill can be requested at once?",
+     "gold": "90 days per request",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "When do release trains leave?",
+     "gold": "Tuesdays and Fridays at 11:00 IST",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "The atlas-batch job failed at 08:40 UTC. Can we restart it right away?",
+     "gold": "No, it must not be restarted before 09:00 UTC",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "We want to add a new dependency and ship on the next release train the same day. Allowed?",
+     "gold": "Only if legal's license scan completes before merge; trains leave Tue/Fri 11:00 IST",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "A P1 fires on a Thursday evening. Who gets paged and what must exist within 24 hours?",
+     "gold": "#vantar-p1-sev gets paged, and a written timeline is required within 24 hours",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "For the monthly cost review, how do we isolate batch spend in Snowflake?",
+     "gold": "Filter on the vantar-nightly query tag during the first-Tuesday cost review",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Can we bring back the old kestrel cluster to run a 120 day analytics backfill?",
+     "gold": "No on both counts: kestrel is decommissioned (now kestrel-2) and backfills cap at 90 days",
+     "got": "I don't know.",
+     "ok": false
+    },
+    {
+     "q": "Why did the last token rotation fail, and what should we check in Vault?",
+     "gold": "The vault policy expired at 60 days while rotation runs every 45 days, so the policy must outlive rotation",
+     "got": "I don't know.",
+     "ok": false
+    }
+   ]
+  },
+  "transcript_rag": {
+   "accuracy": 0.955,
+   "by_type": {
+    "direct": 1.0,
+    "derived": 0.833
+   },
+   "context_tokens_per_query": 227,
+   "samples": [
+    {
+     "q": "What is the nightly ETL freeze window?",
+     "gold": "02:15 to 02:45 UTC",
+     "got": "02:15\u201302:45 UTC daily.",
+     "ok": true
+    },
+    {
+     "q": "Which service owns the docs pipeline and what is its SLA?",
+     "gold": "inksync, 99.5%",
+     "got": "Service **inksync** owns the docs pipeline; SLA **99.5%**.",
+     "ok": true
+    },
+    {
+     "q": "How often is the CI deploy token rotated?",
+     "gold": "Every 45 days",
+     "got": "Every 45 days, by the platform team.",
+     "ok": true
+    },
+    {
+     "q": "Where do P2 incidents go?",
+     "gold": "The ticketing queue (P1 goes to #vantar-p1-sev)",
+     "got": "Into the ticketing queue.",
+     "ok": true
+    },
+    {
+     "q": "What is the HTTP retry budget and base backoff?",
+     "gold": "3 attempts with 250ms base backoff",
+     "got": "3 attempts with a 250ms base backoff.",
+     "ok": true
+    },
+    {
+     "q": "What is the pod memory cap in prod-eu?",
+     "gold": "48 GiB per pod",
+     "got": "48 GiB per pod.",
+     "ok": true
+    },
+    {
+     "q": "When do cost reviews happen?",
+     "gold": "First Tuesday of every month",
+     "got": "First Tuesday of every month.",
+     "ok": true
+    },
+    {
+     "q": "Which support macro is approved for delayed webhooks?",
+     "gold": "FR-17",
+     "got": "FR-17.",
+     "ok": true
+    },
+    {
+     "q": "How long a deprecation notice do analytics schema changes need?",
+     "gold": "2 weeks",
+     "got": "2 weeks.",
+     "ok": true
+    },
+    {
+     "q": "What replaced the staging cluster kestrel?",
+     "gold": "kestrel-2 (kestrel was decommissioned in Oct 2026)",
+     "got": "kestrel-2.",
+     "ok": true
+    },
+    {
+     "q": "What is the client timeout now, and what was it before the retry storm?",
+     "gold": "30 seconds now, raised from 10 seconds after the Sept 2026 retry storm",
+     "got": "Now: 30 seconds. Before the retry storm: 10 seconds.",
+     "ok": true
+    },
+    {
+     "q": "How long is the on-call rotation and when is handover?",
+     "gold": "7 days, handover Thursdays at 16:00 IST",
+     "got": "7 days, handover Thursdays at 16:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "What is Halcyon Freight's SLA and restore target?",
+     "gold": "99.9% with a 4 hour restore target",
+     "got": "99.9% SLA with a 4 hour restore target.",
+     "ok": true
+    },
+    {
+     "q": "Which Snowflake query tag marks batch workloads?",
+     "gold": "vantar-nightly",
+     "got": "vantar-nightly",
+     "ok": true
+    },
+    {
+     "q": "How many days of analytics backfill can be requested at once?",
+     "gold": "90 days per request",
+     "got": "90 days per request.",
+     "ok": true
+    },
+    {
+     "q": "When do release trains leave?",
+     "gold": "Tuesdays and Fridays at 11:00 IST",
+     "got": "Tuesdays and Fridays at 11:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "The atlas-batch job failed at 08:40 UTC. Can we restart it right away?",
+     "gold": "No, it must not be restarted before 09:00 UTC",
+     "got": "No \u2014 the rule is never restart atlas-batch before 09:00 UTC. At 08:40 UTC you'd need to wait at least 20 minutes.",
+     "ok": true
+    },
+    {
+     "q": "We want to add a new dependency and ship on the next release train the same day. Allowed?",
+     "gold": "Only if legal's license scan completes before merge; trains leave Tue/Fri 11:00 IST",
+     "got": "Not automatically. A new dependency needs a legal license scan before merge, so same-day shipping is only allowed if that scan is done before merge.",
+     "ok": false
+    },
+    {
+     "q": "A P1 fires on a Thursday evening. Who gets paged and what must exist within 24 hours?",
+     "gold": "#vantar-p1-sev gets paged, and a written timeline is required within 24 hours",
+     "got": "P1 pages go to **#vantar-p1-sev**. Within 24 hours, a **written timeline** must exist.",
+     "ok": true
+    },
+    {
+     "q": "For the monthly cost review, how do we isolate batch spend in Snowflake?",
+     "gold": "Filter on the vantar-nightly query tag during the first-Tuesday cost review",
+     "got": "Use the Snowflake query tag `vantar-nightly` to identify batch workloads for cost attribution.",
+     "ok": true
+    },
+    {
+     "q": "Can we bring back the old kestrel cluster to run a 120 day analytics backfill?",
+     "gold": "No on both counts: kestrel is decommissioned (now kestrel-2) and backfills cap at 90 days",
+     "got": "No. kestrel was decommissioned in Oct 2026 (now kestrel-2), and analytics backfills are capped at 90 days per request.",
+     "ok": true
+    },
+    {
+     "q": "Why did the last token rotation fail, and what should we check in Vault?",
+     "gold": "The vault policy expired at 60 days while rotation runs every 45 days, so the policy must outlive rotation",
+     "got": "The 45-day token rotation failed because the Vault policy expired at 60 days. Check the Vault policy expiry and secrets under `kv/vantar/prod`.",
+     "ok": true
+    }
+   ]
+  },
+  "chunk_rag": {
+   "accuracy": 1.0,
+   "by_type": {
+    "direct": 1.0,
+    "derived": 1.0
+   },
+   "context_tokens_per_query": 77,
+   "samples": [
+    {
+     "q": "What is the nightly ETL freeze window?",
+     "gold": "02:15 to 02:45 UTC",
+     "got": "02:15\u201302:45 UTC daily.",
+     "ok": true
+    },
+    {
+     "q": "Which service owns the docs pipeline and what is its SLA?",
+     "gold": "inksync, 99.5%",
+     "got": "Inksync owns the docs pipeline; SLA is 99.5%.",
+     "ok": true
+    },
+    {
+     "q": "How often is the CI deploy token rotated?",
+     "gold": "Every 45 days",
+     "got": "Every 45 days.",
+     "ok": true
+    },
+    {
+     "q": "Where do P2 incidents go?",
+     "gold": "The ticketing queue (P1 goes to #vantar-p1-sev)",
+     "got": "P2 incidents go into the ticketing queue.",
+     "ok": true
+    },
+    {
+     "q": "What is the HTTP retry budget and base backoff?",
+     "gold": "3 attempts with 250ms base backoff",
+     "got": "3 attempts, 250ms base backoff.",
+     "ok": true
+    },
+    {
+     "q": "What is the pod memory cap in prod-eu?",
+     "gold": "48 GiB per pod",
+     "got": "48 GiB per pod.",
+     "ok": true
+    },
+    {
+     "q": "When do cost reviews happen?",
+     "gold": "First Tuesday of every month",
+     "got": "First Tuesday of every month.",
+     "ok": true
+    },
+    {
+     "q": "Which support macro is approved for delayed webhooks?",
+     "gold": "FR-17",
+     "got": "FR-17",
+     "ok": true
+    },
+    {
+     "q": "How long a deprecation notice do analytics schema changes need?",
+     "gold": "2 weeks",
+     "got": "2 weeks.",
+     "ok": true
+    },
+    {
+     "q": "What replaced the staging cluster kestrel?",
+     "gold": "kestrel-2 (kestrel was decommissioned in Oct 2026)",
+     "got": "kestrel-2.",
+     "ok": true
+    },
+    {
+     "q": "What is the client timeout now, and what was it before the retry storm?",
+     "gold": "30 seconds now, raised from 10 seconds after the Sept 2026 retry storm",
+     "got": "Now: 30 seconds. Before the retry storm: 10 seconds.",
+     "ok": true
+    },
+    {
+     "q": "How long is the on-call rotation and when is handover?",
+     "gold": "7 days, handover Thursdays at 16:00 IST",
+     "got": "7 days; handover Thursdays at 16:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "What is Halcyon Freight's SLA and restore target?",
+     "gold": "99.9% with a 4 hour restore target",
+     "got": "99.9% SLA with a 4-hour restore target.",
+     "ok": true
+    },
+    {
+     "q": "Which Snowflake query tag marks batch workloads?",
+     "gold": "vantar-nightly",
+     "got": "`vantar-nightly`",
+     "ok": true
+    },
+    {
+     "q": "How many days of analytics backfill can be requested at once?",
+     "gold": "90 days per request",
+     "got": "90 days per request.",
+     "ok": true
+    },
+    {
+     "q": "When do release trains leave?",
+     "gold": "Tuesdays and Fridays at 11:00 IST",
+     "got": "Tuesdays and Fridays at 11:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "The atlas-batch job failed at 08:40 UTC. Can we restart it right away?",
+     "gold": "No, it must not be restarted before 09:00 UTC",
+     "got": "No \u2014 don't restart atlas-batch before 09:00 UTC. Wait until 09:00 UTC.",
+     "ok": true
+    },
+    {
+     "q": "We want to add a new dependency and ship on the next release train the same day. Allowed?",
+     "gold": "Only if legal's license scan completes before merge; trains leave Tue/Fri 11:00 IST",
+     "got": "Not allowed unless legal's license scan is completed before merge. The release train timing doesn't bypass that requirement.",
+     "ok": true
+    },
+    {
+     "q": "A P1 fires on a Thursday evening. Who gets paged and what must exist within 24 hours?",
+     "gold": "#vantar-p1-sev gets paged, and a written timeline is required within 24 hours",
+     "got": "P1 pages go to **#vantar-p1-sev**. Thursday evening is after the **16:00 IST Thursday** on-call handover, so the incoming on-call is responsible. Within **24 hours**, a **written timeline** must exist.",
+     "ok": true
+    },
+    {
+     "q": "For the monthly cost review, how do we isolate batch spend in Snowflake?",
+     "gold": "Filter on the vantar-nightly query tag during the first-Tuesday cost review",
+     "got": "Use the Snowflake query tag `vantar-nightly` to identify batch workloads for cost attribution.",
+     "ok": true
+    },
+    {
+     "q": "Can we bring back the old kestrel cluster to run a 120 day analytics backfill?",
+     "gold": "No on both counts: kestrel is decommissioned (now kestrel-2) and backfills cap at 90 days",
+     "got": "No. Kestrel was decommissioned in Oct 2026 (now kestrel-2), and analytics backfills are limited to 90 days per request\u2014120 days exceeds that.",
+     "ok": true
+    },
+    {
+     "q": "Why did the last token rotation fail, and what should we check in Vault?",
+     "gold": "The vault policy expired at 60 days while rotation runs every 45 days, so the policy must outlive rotation",
+     "got": "The 45-day token rotation failed because the Vault policy expired at 60 days. Check the Vault policy expiry and secrets at `kv/vantar/prod`.",
+     "ok": true
+    }
+   ]
+  },
+  "sleep": {
+   "accuracy": 0.909,
+   "by_type": {
+    "direct": 1.0,
+    "derived": 0.667
+   },
+   "context_tokens_per_query": 361,
+   "samples": [
+    {
+     "q": "What is the nightly ETL freeze window?",
+     "gold": "02:15 to 02:45 UTC",
+     "got": "The nightly ETL freeze window is 02:15 to 02:45 UTC every day.",
+     "ok": true
+    },
+    {
+     "q": "Which service owns the docs pipeline and what is its SLA?",
+     "gold": "inksync, 99.5%",
+     "got": "inksync owns the docs pipeline, and its SLA is 99.5%.",
+     "ok": true
+    },
+    {
+     "q": "How often is the CI deploy token rotated?",
+     "gold": "Every 45 days",
+     "got": "The CI deploy token is rotated every 45 days by the platform team.",
+     "ok": true
+    },
+    {
+     "q": "Where do P2 incidents go?",
+     "gold": "The ticketing queue (P1 goes to #vantar-p1-sev)",
+     "got": "P2 incidents go only into the ticketing queue.",
+     "ok": true
+    },
+    {
+     "q": "What is the HTTP retry budget and base backoff?",
+     "gold": "3 attempts with 250ms base backoff",
+     "got": "Vantar's HTTP retry budget is 3 attempts with a 250ms base backoff.",
+     "ok": true
+    },
+    {
+     "q": "What is the pod memory cap in prod-eu?",
+     "gold": "48 GiB per pod",
+     "got": "The pod memory cap in Vantar's prod-eu namespace is 48 GiB per pod.",
+     "ok": true
+    },
+    {
+     "q": "When do cost reviews happen?",
+     "gold": "First Tuesday of every month",
+     "got": "Cost reviews are scheduled on the first Tuesday of every month.",
+     "ok": true
+    },
+    {
+     "q": "Which support macro is approved for delayed webhooks?",
+     "gold": "FR-17",
+     "got": "Support macro FR-17 is the only approved reply for delayed Vantar webhooks.",
+     "ok": true
+    },
+    {
+     "q": "How long a deprecation notice do analytics schema changes need?",
+     "gold": "2 weeks",
+     "got": "Analytics schema changes require a 2-week deprecation notice.",
+     "ok": true
+    },
+    {
+     "q": "What replaced the staging cluster kestrel?",
+     "gold": "kestrel-2 (kestrel was decommissioned in Oct 2026)",
+     "got": "kestrel-2 replaced the staging cluster kestrel.",
+     "ok": true
+    },
+    {
+     "q": "What is the client timeout now, and what was it before the retry storm?",
+     "gold": "30 seconds now, raised from 10 seconds after the Sept 2026 retry storm",
+     "got": "The Inksync client timeout is now 30 seconds, raised from 10 seconds after the September 2026 retry storm.",
+     "ok": true
+    },
+    {
+     "q": "How long is the on-call rotation and when is handover?",
+     "gold": "7 days, handover Thursdays at 16:00 IST",
+     "got": "On-call rotation is 7 days, with handover on Thursdays at 16:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "What is Halcyon Freight's SLA and restore target?",
+     "gold": "99.9% with a 4 hour restore target",
+     "got": "Halcyon Freight has a custom SLA of 99.9% availability and a 4-hour restore target.",
+     "ok": true
+    },
+    {
+     "q": "Which Snowflake query tag marks batch workloads?",
+     "gold": "vantar-nightly",
+     "got": "vantar-nightly marks batch workloads for cost attribution.",
+     "ok": true
+    },
+    {
+     "q": "How many days of analytics backfill can be requested at once?",
+     "gold": "90 days per request",
+     "got": "90 days per request.",
+     "ok": true
+    },
+    {
+     "q": "When do release trains leave?",
+     "gold": "Tuesdays and Fridays at 11:00 IST",
+     "got": "Release trains leave on Tuesdays and Fridays at 11:00 IST.",
+     "ok": true
+    },
+    {
+     "q": "The atlas-batch job failed at 08:40 UTC. Can we restart it right away?",
+     "gold": "No, it must not be restarted before 09:00 UTC",
+     "got": "No\u2014do not restart atlas-batch before 09:00 UTC.",
+     "ok": true
+    },
+    {
+     "q": "We want to add a new dependency and ship on the next release train the same day. Allowed?",
+     "gold": "Only if legal's license scan completes before merge; trains leave Tue/Fri 11:00 IST",
+     "got": "Not allowed unless the required legal license scan is completed before merge; the memory does not specify same-day release-train timing.",
+     "ok": true
+    },
+    {
+     "q": "A P1 fires on a Thursday evening. Who gets paged and what must exist within 24 hours?",
+     "gold": "#vantar-p1-sev gets paged, and a written timeline is required within 24 hours",
+     "got": "Page #vantar-p1-sev, and a timeline must be written within 24 hours.",
+     "ok": true
+    },
+    {
+     "q": "For the monthly cost review, how do we isolate batch spend in Snowflake?",
+     "gold": "Filter on the vantar-nightly query tag during the first-Tuesday cost review",
+     "got": "Filter Snowflake cost attribution on query tag `vantar-nightly`, which identifies batch workloads.",
+     "ok": true
+    },
+    {
+     "q": "Can we bring back the old kestrel cluster to run a 120 day analytics backfill?",
+     "gold": "No on both counts: kestrel is decommissioned (now kestrel-2) and backfills cap at 90 days",
+     "got": "I don't know if the old kestrel cluster can be restored\u2014it was decommissioned in Oct 2026 and is now kestrel-2.",
+     "ok": false
+    },
+    {
+     "q": "Why did the last token rotation fail, and what should we check in Vault?",
+     "gold": "The vault policy expired at 60 days while rotation runs every 45 days, so the policy must outlive rotation",
+     "got": "The last token rotation failed because the Vault policy expired at 60 days; check the Vault policy expiry and secrets at kv/vantar/prod.",
+     "ok": false
+    }
+   ]
+  }
+ }
+}

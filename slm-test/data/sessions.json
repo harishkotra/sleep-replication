@@ -1,0 +1,584 @@
+[
+ {
+  "session": 1,
+  "subsystem": "ingest",
+  "text": "Notes from the weekly sync at Halvard Systems, session 1, subsystem ingest. The nightly ingest ETL freeze window runs from 02:15-02:45 UTC. The ingest warehouse cluster is named quartz-dw and runs on Snowflake. The ingest CI deploy token rotates every 45 days. The ingest gateway is served from eu-central-1. ingest on-call shifts last 7 days and hand over at 16:00 IST. P1 pages for ingest always go to #halvard-p1-sev. The ingest batch job atlas-batch must never be restarted before 09:00 UTC. ingest feature flags live in brindle and default to off. ingest HTTP retries use 3 attempts with a 250ms base backoff. The ingest audit archive bucket is halvard-raw-prod. The ingest search index rebuild runs every 6 hours. Deploys for ingest are frozen during the last week of March. The ingest service is owned by the platform team. The platform team standardised on brindle for all builds. The ingest cost budget is tracked in the brindle dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly ingest ETL freeze window runs from 02:15-02:45 UTC.",
+    "q": "What is the nightly ingest ETL freeze window?",
+    "a": "02:15-02:45",
+    "t": "etl"
+   },
+   {
+    "s": "The ingest warehouse cluster is named quartz-dw and runs on Snowflake.",
+    "q": "What is the ingest warehouse cluster called?",
+    "a": "quartz-dw",
+    "t": "storage"
+   },
+   {
+    "s": "The ingest CI deploy token rotates every 45 days.",
+    "q": "How often does the ingest CI deploy token rotate?",
+    "a": "45",
+    "t": "ci"
+   },
+   {
+    "s": "The ingest gateway is served from eu-central-1.",
+    "q": "Which region serves the ingest gateway?",
+    "a": "eu-central-1",
+    "t": "infra"
+   },
+   {
+    "s": "ingest on-call shifts last 7 days and hand over at 16:00 IST.",
+    "q": "How long is a ingest on-call shift?",
+    "a": "7",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for ingest always go to #halvard-p1-sev.",
+    "q": "Which channel gets P1 pages for ingest?",
+    "a": "#halvard-p1-sev",
+    "t": "oncall"
+   },
+   {
+    "s": "The ingest batch job atlas-batch must never be restarted before 09:00 UTC.",
+    "q": "Which ingest batch job must not be restarted before 09:00 UTC?",
+    "a": "atlas-batch",
+    "t": "etl"
+   },
+   {
+    "s": "ingest feature flags live in brindle and default to off.",
+    "q": "Where do ingest feature flags live?",
+    "a": "brindle",
+    "t": "flags"
+   },
+   {
+    "s": "ingest HTTP retries use 3 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does ingest allow?",
+    "a": "3",
+    "t": "api"
+   },
+   {
+    "s": "The ingest audit archive bucket is halvard-raw-prod.",
+    "q": "What is the ingest audit archive bucket called?",
+    "a": "halvard-raw-prod",
+    "t": "storage"
+   },
+   {
+    "s": "The ingest search index rebuild runs every 6 hours.",
+    "q": "How often does the ingest search index rebuild run?",
+    "a": "6",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for ingest are frozen during the last week of March.",
+    "q": "When are ingest deploys frozen?",
+    "a": "March",
+    "t": "ci"
+   },
+   {
+    "s": "The ingest service is owned by the platform team.",
+    "q": "Which team owns the ingest service?",
+    "a": "platform",
+    "t": "ownership"
+   },
+   {
+    "s": "The platform team standardised on brindle for all builds.",
+    "q": "Which tool does the platform team use?",
+    "a": "brindle",
+    "t": "ownership"
+   },
+   {
+    "s": "The ingest cost budget is tracked in the brindle dashboard, not in a spreadsheet.",
+    "q": "Where is the ingest cost budget tracked?",
+    "a": "brindle",
+    "t": "billing"
+   }
+  ]
+ },
+ {
+  "session": 2,
+  "subsystem": "billing",
+  "text": "Notes from the weekly sync at Halvard Systems, session 2, subsystem billing. The nightly billing ETL freeze window runs from 03:10-03:40 UTC. The billing warehouse cluster is named flint-07 and runs on Snowflake. The billing CI deploy token rotates every 30 days. The billing gateway is served from us-east-2. billing on-call shifts last 5 days and hand over at 16:00 IST. P1 pages for billing always go to #inc-bridge. The billing batch job ledgerd must never be restarted before 09:00 UTC. billing feature flags live in tessera and default to off. billing HTTP retries use 5 attempts with a 250ms base backoff. The billing audit archive bucket is halvard-curated. The billing search index rebuild runs every 12 hours. Deploys for billing are frozen during the last week of June. The billing service is owned by the data-eng team. The data-eng team standardised on tessera for all builds. The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly billing ETL freeze window runs from 03:10-03:40 UTC.",
+    "q": "What is the nightly billing ETL freeze window?",
+    "a": "03:10-03:40",
+    "t": "etl"
+   },
+   {
+    "s": "The billing warehouse cluster is named flint-07 and runs on Snowflake.",
+    "q": "What is the billing warehouse cluster called?",
+    "a": "flint-07",
+    "t": "storage"
+   },
+   {
+    "s": "The billing CI deploy token rotates every 30 days.",
+    "q": "How often does the billing CI deploy token rotate?",
+    "a": "30",
+    "t": "ci"
+   },
+   {
+    "s": "The billing gateway is served from us-east-2.",
+    "q": "Which region serves the billing gateway?",
+    "a": "us-east-2",
+    "t": "infra"
+   },
+   {
+    "s": "billing on-call shifts last 5 days and hand over at 16:00 IST.",
+    "q": "How long is a billing on-call shift?",
+    "a": "5",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for billing always go to #inc-bridge.",
+    "q": "Which channel gets P1 pages for billing?",
+    "a": "#inc-bridge",
+    "t": "oncall"
+   },
+   {
+    "s": "The billing batch job ledgerd must never be restarted before 09:00 UTC.",
+    "q": "Which billing batch job must not be restarted before 09:00 UTC?",
+    "a": "ledgerd",
+    "t": "etl"
+   },
+   {
+    "s": "billing feature flags live in tessera and default to off.",
+    "q": "Where do billing feature flags live?",
+    "a": "tessera",
+    "t": "flags"
+   },
+   {
+    "s": "billing HTTP retries use 5 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does billing allow?",
+    "a": "5",
+    "t": "api"
+   },
+   {
+    "s": "The billing audit archive bucket is halvard-curated.",
+    "q": "What is the billing audit archive bucket called?",
+    "a": "halvard-curated",
+    "t": "storage"
+   },
+   {
+    "s": "The billing search index rebuild runs every 12 hours.",
+    "q": "How often does the billing search index rebuild run?",
+    "a": "12",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for billing are frozen during the last week of June.",
+    "q": "When are billing deploys frozen?",
+    "a": "June",
+    "t": "ci"
+   },
+   {
+    "s": "The billing service is owned by the data-eng team.",
+    "q": "Which team owns the billing service?",
+    "a": "data-eng",
+    "t": "ownership"
+   },
+   {
+    "s": "The data-eng team standardised on tessera for all builds.",
+    "q": "Which tool does the data-eng team use?",
+    "a": "tessera",
+    "t": "ownership"
+   },
+   {
+    "s": "The billing cost budget is tracked in the tessera dashboard, not in a spreadsheet.",
+    "q": "Where is the billing cost budget tracked?",
+    "a": "tessera",
+    "t": "billing"
+   }
+  ]
+ },
+ {
+  "session": 3,
+  "subsystem": "search",
+  "text": "Notes from the weekly sync at Halvard Systems, session 3, subsystem search. The nightly search ETL freeze window runs from 01:05-01:35 UTC. The search warehouse cluster is named marl-2 and runs on Snowflake. The search CI deploy token rotates every 60 days. The search gateway is served from ap-south-1. search on-call shifts last 10 days and hand over at 16:00 IST. P1 pages for search always go to #oncall-now. The search batch job mailmint must never be restarted before 09:00 UTC. search feature flags live in voxel-ci and default to off. search HTTP retries use 2 attempts with a 250ms base backoff. The search audit archive bucket is halvard-audit. The search search index rebuild runs every 24 hours. Deploys for search are frozen during the last week of September. The search service is owned by the payments team. The payments team standardised on voxel-ci for all builds. The search cost budget is tracked in the voxel-ci dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly search ETL freeze window runs from 01:05-01:35 UTC.",
+    "q": "What is the nightly search ETL freeze window?",
+    "a": "01:05-01:35",
+    "t": "etl"
+   },
+   {
+    "s": "The search warehouse cluster is named marl-2 and runs on Snowflake.",
+    "q": "What is the search warehouse cluster called?",
+    "a": "marl-2",
+    "t": "storage"
+   },
+   {
+    "s": "The search CI deploy token rotates every 60 days.",
+    "q": "How often does the search CI deploy token rotate?",
+    "a": "60",
+    "t": "ci"
+   },
+   {
+    "s": "The search gateway is served from ap-south-1.",
+    "q": "Which region serves the search gateway?",
+    "a": "ap-south-1",
+    "t": "infra"
+   },
+   {
+    "s": "search on-call shifts last 10 days and hand over at 16:00 IST.",
+    "q": "How long is a search on-call shift?",
+    "a": "10",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for search always go to #oncall-now.",
+    "q": "Which channel gets P1 pages for search?",
+    "a": "#oncall-now",
+    "t": "oncall"
+   },
+   {
+    "s": "The search batch job mailmint must never be restarted before 09:00 UTC.",
+    "q": "Which search batch job must not be restarted before 09:00 UTC?",
+    "a": "mailmint",
+    "t": "etl"
+   },
+   {
+    "s": "search feature flags live in voxel-ci and default to off.",
+    "q": "Where do search feature flags live?",
+    "a": "voxel-ci",
+    "t": "flags"
+   },
+   {
+    "s": "search HTTP retries use 2 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does search allow?",
+    "a": "2",
+    "t": "api"
+   },
+   {
+    "s": "The search audit archive bucket is halvard-audit.",
+    "q": "What is the search audit archive bucket called?",
+    "a": "halvard-audit",
+    "t": "storage"
+   },
+   {
+    "s": "The search search index rebuild runs every 24 hours.",
+    "q": "How often does the search search index rebuild run?",
+    "a": "24",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for search are frozen during the last week of September.",
+    "q": "When are search deploys frozen?",
+    "a": "September",
+    "t": "ci"
+   },
+   {
+    "s": "The search service is owned by the payments team.",
+    "q": "Which team owns the search service?",
+    "a": "payments",
+    "t": "ownership"
+   },
+   {
+    "s": "The payments team standardised on voxel-ci for all builds.",
+    "q": "Which tool does the payments team use?",
+    "a": "voxel-ci",
+    "t": "ownership"
+   },
+   {
+    "s": "The search cost budget is tracked in the voxel-ci dashboard, not in a spreadsheet.",
+    "q": "Where is the search cost budget tracked?",
+    "a": "voxel-ci",
+    "t": "billing"
+   }
+  ]
+ },
+ {
+  "session": 4,
+  "subsystem": "growth",
+  "text": "Notes from the weekly sync at Halvard Systems, session 4, subsystem growth. The nightly growth ETL freeze window runs from 04:20-04:50 UTC. The growth warehouse cluster is named basalt-3 and runs on Snowflake. The growth CI deploy token rotates every 21 days. The growth gateway is served from eu-west-2. growth on-call shifts last 4 days and hand over at 16:00 IST. P1 pages for growth always go to #sev-war-room. The growth batch job rollupd must never be restarted before 09:00 UTC. growth feature flags live in quarry and default to off. growth HTTP retries use 4 attempts with a 250ms base backoff. The growth audit archive bucket is halvard-lake. The growth search index rebuild runs every 3 hours. Deploys for growth are frozen during the last week of January. The growth service is owned by the discovery team. The discovery team standardised on quarry for all builds. The growth cost budget is tracked in the quarry dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly growth ETL freeze window runs from 04:20-04:50 UTC.",
+    "q": "What is the nightly growth ETL freeze window?",
+    "a": "04:20-04:50",
+    "t": "etl"
+   },
+   {
+    "s": "The growth warehouse cluster is named basalt-3 and runs on Snowflake.",
+    "q": "What is the growth warehouse cluster called?",
+    "a": "basalt-3",
+    "t": "storage"
+   },
+   {
+    "s": "The growth CI deploy token rotates every 21 days.",
+    "q": "How often does the growth CI deploy token rotate?",
+    "a": "21",
+    "t": "ci"
+   },
+   {
+    "s": "The growth gateway is served from eu-west-2.",
+    "q": "Which region serves the growth gateway?",
+    "a": "eu-west-2",
+    "t": "infra"
+   },
+   {
+    "s": "growth on-call shifts last 4 days and hand over at 16:00 IST.",
+    "q": "How long is a growth on-call shift?",
+    "a": "4",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for growth always go to #sev-war-room.",
+    "q": "Which channel gets P1 pages for growth?",
+    "a": "#sev-war-room",
+    "t": "oncall"
+   },
+   {
+    "s": "The growth batch job rollupd must never be restarted before 09:00 UTC.",
+    "q": "Which growth batch job must not be restarted before 09:00 UTC?",
+    "a": "rollupd",
+    "t": "etl"
+   },
+   {
+    "s": "growth feature flags live in quarry and default to off.",
+    "q": "Where do growth feature flags live?",
+    "a": "quarry",
+    "t": "flags"
+   },
+   {
+    "s": "growth HTTP retries use 4 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does growth allow?",
+    "a": "4",
+    "t": "api"
+   },
+   {
+    "s": "The growth audit archive bucket is halvard-lake.",
+    "q": "What is the growth audit archive bucket called?",
+    "a": "halvard-lake",
+    "t": "storage"
+   },
+   {
+    "s": "The growth search index rebuild runs every 3 hours.",
+    "q": "How often does the growth search index rebuild run?",
+    "a": "3",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for growth are frozen during the last week of January.",
+    "q": "When are growth deploys frozen?",
+    "a": "January",
+    "t": "ci"
+   },
+   {
+    "s": "The growth service is owned by the discovery team.",
+    "q": "Which team owns the growth service?",
+    "a": "discovery",
+    "t": "ownership"
+   },
+   {
+    "s": "The discovery team standardised on quarry for all builds.",
+    "q": "Which tool does the discovery team use?",
+    "a": "quarry",
+    "t": "ownership"
+   },
+   {
+    "s": "The growth cost budget is tracked in the quarry dashboard, not in a spreadsheet.",
+    "q": "Where is the growth cost budget tracked?",
+    "a": "quarry",
+    "t": "billing"
+   }
+  ]
+ },
+ {
+  "session": 5,
+  "subsystem": "sre",
+  "text": "Notes from the weekly sync at Halvard Systems, session 5, subsystem sre. The nightly sre ETL freeze window runs from 00:40-01:10 UTC. The sre warehouse cluster is named onyx-5 and runs on Snowflake. The sre CI deploy token rotates every 90 days. The sre gateway is served from us-west-1. sre on-call shifts last 6 days and hand over at 16:00 IST. P1 pages for sre always go to #p1-triage. The sre batch job archive-sync must never be restarted before 09:00 UTC. sre feature flags live in slate and default to off. sre HTTP retries use 3 attempts with a 250ms base backoff. The sre audit archive bucket is halvard-cold. The sre search index rebuild runs every 8 hours. Deploys for sre are frozen during the last week of May. The sre service is owned by the reliability team. The reliability team standardised on slate for all builds. The sre cost budget is tracked in the slate dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly sre ETL freeze window runs from 00:40-01:10 UTC.",
+    "q": "What is the nightly sre ETL freeze window?",
+    "a": "00:40-01:10",
+    "t": "etl"
+   },
+   {
+    "s": "The sre warehouse cluster is named onyx-5 and runs on Snowflake.",
+    "q": "What is the sre warehouse cluster called?",
+    "a": "onyx-5",
+    "t": "storage"
+   },
+   {
+    "s": "The sre CI deploy token rotates every 90 days.",
+    "q": "How often does the sre CI deploy token rotate?",
+    "a": "90",
+    "t": "ci"
+   },
+   {
+    "s": "The sre gateway is served from us-west-1.",
+    "q": "Which region serves the sre gateway?",
+    "a": "us-west-1",
+    "t": "infra"
+   },
+   {
+    "s": "sre on-call shifts last 6 days and hand over at 16:00 IST.",
+    "q": "How long is a sre on-call shift?",
+    "a": "6",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for sre always go to #p1-triage.",
+    "q": "Which channel gets P1 pages for sre?",
+    "a": "#p1-triage",
+    "t": "oncall"
+   },
+   {
+    "s": "The sre batch job archive-sync must never be restarted before 09:00 UTC.",
+    "q": "Which sre batch job must not be restarted before 09:00 UTC?",
+    "a": "archive-sync",
+    "t": "etl"
+   },
+   {
+    "s": "sre feature flags live in slate and default to off.",
+    "q": "Where do sre feature flags live?",
+    "a": "slate",
+    "t": "flags"
+   },
+   {
+    "s": "sre HTTP retries use 3 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does sre allow?",
+    "a": "3",
+    "t": "api"
+   },
+   {
+    "s": "The sre audit archive bucket is halvard-cold.",
+    "q": "What is the sre audit archive bucket called?",
+    "a": "halvard-cold",
+    "t": "storage"
+   },
+   {
+    "s": "The sre search index rebuild runs every 8 hours.",
+    "q": "How often does the sre search index rebuild run?",
+    "a": "8",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for sre are frozen during the last week of May.",
+    "q": "When are sre deploys frozen?",
+    "a": "May",
+    "t": "ci"
+   },
+   {
+    "s": "The sre service is owned by the reliability team.",
+    "q": "Which team owns the sre service?",
+    "a": "reliability",
+    "t": "ownership"
+   },
+   {
+    "s": "The reliability team standardised on slate for all builds.",
+    "q": "Which tool does the reliability team use?",
+    "a": "slate",
+    "t": "ownership"
+   },
+   {
+    "s": "The sre cost budget is tracked in the slate dashboard, not in a spreadsheet.",
+    "q": "Where is the sre cost budget tracked?",
+    "a": "slate",
+    "t": "billing"
+   }
+  ]
+ },
+ {
+  "session": 6,
+  "subsystem": "portal",
+  "text": "Notes from the weekly sync at Halvard Systems, session 6, subsystem portal. The nightly portal ETL freeze window runs from 05:30-06:00 UTC. The portal warehouse cluster is named shale-11 and runs on Snowflake. The portal CI deploy token rotates every 14 days. The portal gateway is served from ap-northeast-1. portal on-call shifts last 8 days and hand over at 16:00 IST. P1 pages for portal always go to #ops-alert. The portal batch job digestd must never be restarted before 09:00 UTC. portal feature flags live in hopper and default to off. portal HTTP retries use 6 attempts with a 250ms base backoff. The portal audit archive bucket is halvard-scratch. The portal search index rebuild runs every 48 hours. Deploys for portal are frozen during the last week of October. The portal service is owned by the web team. The web team standardised on hopper for all builds. The portal cost budget is tracked in the hopper dashboard, not in a spreadsheet. Reminder: nothing above is decided without written approval in the tracker.",
+  "facts": [
+   {
+    "s": "The nightly portal ETL freeze window runs from 05:30-06:00 UTC.",
+    "q": "What is the nightly portal ETL freeze window?",
+    "a": "05:30-06:00",
+    "t": "etl"
+   },
+   {
+    "s": "The portal warehouse cluster is named shale-11 and runs on Snowflake.",
+    "q": "What is the portal warehouse cluster called?",
+    "a": "shale-11",
+    "t": "storage"
+   },
+   {
+    "s": "The portal CI deploy token rotates every 14 days.",
+    "q": "How often does the portal CI deploy token rotate?",
+    "a": "14",
+    "t": "ci"
+   },
+   {
+    "s": "The portal gateway is served from ap-northeast-1.",
+    "q": "Which region serves the portal gateway?",
+    "a": "ap-northeast-1",
+    "t": "infra"
+   },
+   {
+    "s": "portal on-call shifts last 8 days and hand over at 16:00 IST.",
+    "q": "How long is a portal on-call shift?",
+    "a": "8",
+    "t": "oncall"
+   },
+   {
+    "s": "P1 pages for portal always go to #ops-alert.",
+    "q": "Which channel gets P1 pages for portal?",
+    "a": "#ops-alert",
+    "t": "oncall"
+   },
+   {
+    "s": "The portal batch job digestd must never be restarted before 09:00 UTC.",
+    "q": "Which portal batch job must not be restarted before 09:00 UTC?",
+    "a": "digestd",
+    "t": "etl"
+   },
+   {
+    "s": "portal feature flags live in hopper and default to off.",
+    "q": "Where do portal feature flags live?",
+    "a": "hopper",
+    "t": "flags"
+   },
+   {
+    "s": "portal HTTP retries use 6 attempts with a 250ms base backoff.",
+    "q": "How many HTTP retry attempts does portal allow?",
+    "a": "6",
+    "t": "api"
+   },
+   {
+    "s": "The portal audit archive bucket is halvard-scratch.",
+    "q": "What is the portal audit archive bucket called?",
+    "a": "halvard-scratch",
+    "t": "storage"
+   },
+   {
+    "s": "The portal search index rebuild runs every 48 hours.",
+    "q": "How often does the portal search index rebuild run?",
+    "a": "48",
+    "t": "search"
+   },
+   {
+    "s": "Deploys for portal are frozen during the last week of October.",
+    "q": "When are portal deploys frozen?",
+    "a": "October",
+    "t": "ci"
+   },
+   {
+    "s": "The portal service is owned by the web team.",
+    "q": "Which team owns the portal service?",
+    "a": "web",
+    "t": "ownership"
+   },
+   {
+    "s": "The web team standardised on hopper for all builds.",
+    "q": "Which tool does the web team use?",
+    "a": "hopper",
+    "t": "ownership"
+   },
+   {
+    "s": "The portal cost budget is tracked in the hopper dashboard, not in a spreadsheet.",
+    "q": "Where is the portal cost budget tracked?",
+    "a": "hopper",
+    "t": "billing"
+   }
+  ]
+ }
+]

@@ -1,0 +1,19 @@
+{
+  "note": "SYNTHETIC. Sequential change stream: later sessions revise earlier facts. Measures interference, not recall.",
+  "sessions": [
+    {"id": 1, "transcript": "[user] Baseline for Alder Ridge ops.\n[user] The nightly ETL freeze window is 02:15 to 02:45 UTC.\n[user] The CI deploy token is rotated every 45 days.\n[user] The HTTP client timeout is 30 seconds.\n[user] Analytics backfills are limited to 90 days per request.\n[user] Namespace prod-eu caps memory at 48 GiB per pod.\n[user] Release trains leave on Tuesdays and Fridays at 11:00 IST."},
+    {"id": 2, "transcript": "[user] Change approved today: the CI deploy token is now rotated every 30 days, not 45. Everything else stands."},
+    {"id": 3, "transcript": "[user] Two changes from the reliability review.\n[user] The HTTP client timeout is now 45 seconds.\n[user] Namespace prod-eu memory cap is now 64 GiB per pod."},
+    {"id": 4, "transcript": "[user] More changes.\n[user] Analytics backfills are now limited to 30 days per request.\n[user] Release trains now leave on Wednesdays at 15:00 IST only."},
+    {"id": 5, "transcript": "[user] Final one for now: the nightly ETL freeze window is now 01:00 to 01:30 UTC. The token rotation and timeout values are unchanged."}
+  ],
+  "questions": [
+    {"q": "How often is the CI deploy token rotated?", "a": "Every 30 days", "type": "current"},
+    {"q": "What is the HTTP client timeout?", "a": "45 seconds", "type": "current"},
+    {"q": "What is the pod memory cap in prod-eu?", "a": "64 GiB per pod", "type": "current"},
+    {"q": "How many days of analytics backfill are allowed per request?", "a": "30 days", "type": "current"},
+    {"q": "When do release trains leave?", "a": "Wednesdays at 15:00 IST", "type": "current"},
+    {"q": "What is the nightly ETL freeze window?", "a": "01:00 to 01:30 UTC", "type": "current"},
+    {"q": "What is the CI deploy token rotation interval and is the 45 day value still valid?", "a": "30 days; 45 days is no longer valid", "type": "current"}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "note": "SYNTHETIC probe corpus. Invented company, unguessable facts, used only to measure retention. Not real-world data.",
+  "sessions": [
+    {
+      "id": 1,
+      "transcript": "[user] Quick context dump before you start on Vantar Labs platform work.\n[user] The nightly ETL freeze window is 02:15 to 02:45 UTC every day, nothing heavy runs then.\n[user] Our primary warehouse is quartz-dw on Snowflake, hosted in eu-central.\n[user] The CI deploy token is rotated every 45 days by the platform team.\n[user] Service inksync owns the docs pipeline, its SLA is 99.5%.\n[user] On-call rotation is 7 days with handover on Thursdays at 16:00 IST.\n[user] P1 pages go to #vantar-p1-sev, P2 just goes into the ticketing queue.\n[user] Never restart the legacy billing job atlas-batch before 09:00 UTC.\n[user] Feature flags live in brindle and the default flag state must always be off.\n[assistant] Noted all of that."
+    },
+    {
+      "id": 2,
+      "transcript": "[user] More Vantar context, policy updates this week.\n[user] HTTP retry budget is 3 attempts with a 250ms base backoff.\n[user] The analytics events table is append-only and schema changes need a 2 week deprecation notice.\n[user] Namespace prod-eu caps memory at 48 GiB per pod.\n[user] Cost reviews happen on the first Tuesday of every month.\n[user] Any new dependency needs a license scan by legal before merge.\n[user] Halcyon Freight is our custom SLA customer, 99.9% with a 4 hour restore target.\n[user] Support macro FR-17 is the only approved reply for delayed webhooks.\n[user] Secrets live in Vault path kv/vantar/prod and never in env files."
+    },
+    {
+      "id": 3,
+      "transcript": "[user] Incident learnings and a few changes since last time.\n[user] The inksync retry storm in Sept 2026 came from a 10 second client timeout.\n[user] After that incident we raised the client timeout to 30 seconds.\n[user] Snowflake query tag vantar-nightly identifies batch workloads for cost attribution.\n[user] The 45 day token rotation once failed because the vault policy expired at 60 days.\n[user] New rule: every P1 needs a written timeline within 24 hours.\n[user] We decommissioned the staging cluster kestrel in Oct 2026, it is now kestrel-2.\n[user] Analytics backfills are limited to 90 days per request.\n[user] Release trains leave on Tuesdays and Fridays at 11:00 IST."
+    }
+  ],
+  "questions": [
+    {"q": "What is the nightly ETL freeze window?", "a": "02:15 to 02:45 UTC", "type": "direct"},
+    {"q": "Which service owns the docs pipeline and what is its SLA?", "a": "inksync, 99.5%", "type": "direct"},
+    {"q": "How often is the CI deploy token rotated?", "a": "Every 45 days", "type": "direct"},
+    {"q": "Where do P2 incidents go?", "a": "The ticketing queue (P1 goes to #vantar-p1-sev)", "type": "direct"},
+    {"q": "What is the HTTP retry budget and base backoff?", "a": "3 attempts with 250ms base backoff", "type": "direct"},
+    {"q": "What is the pod memory cap in prod-eu?", "a": "48 GiB per pod", "type": "direct"},
+    {"q": "When do cost reviews happen?", "a": "First Tuesday of every month", "type": "direct"},
+    {"q": "Which support macro is approved for delayed webhooks?", "a": "FR-17", "type": "direct"},
+    {"q": "How long a deprecation notice do analytics schema changes need?", "a": "2 weeks", "type": "direct"},
+    {"q": "What replaced the staging cluster kestrel?", "a": "kestrel-2 (kestrel was decommissioned in Oct 2026)", "type": "direct"},
+    {"q": "What is the client timeout now, and what was it before the retry storm?", "a": "30 seconds now, raised from 10 seconds after the Sept 2026 retry storm", "type": "direct"},
+    {"q": "How long is the on-call rotation and when is handover?", "a": "7 days, handover Thursdays at 16:00 IST", "type": "direct"},
+    {"q": "What is Halcyon Freight's SLA and restore target?", "a": "99.9% with a 4 hour restore target", "type": "direct"},
+    {"q": "Which Snowflake query tag marks batch workloads?", "a": "vantar-nightly", "type": "direct"},
+    {"q": "How many days of analytics backfill can be requested at once?", "a": "90 days per request", "type": "direct"},
+    {"q": "When do release trains leave?", "a": "Tuesdays and Fridays at 11:00 IST", "type": "direct"},
+    {"q": "The atlas-batch job failed at 08:40 UTC. Can we restart it right away?", "a": "No, it must not be restarted before 09:00 UTC", "type": "derived"},
+    {"q": "We want to add a new dependency and ship on the next release train the same day. Allowed?", "a": "Only if legal's license scan completes before merge; trains leave Tue/Fri 11:00 IST", "type": "derived"},
+    {"q": "A P1 fires on a Thursday evening. Who gets paged and what must exist within 24 hours?", "a": "#vantar-p1-sev gets paged, and a written timeline is required within 24 hours", "type": "derived"},
+    {"q": "For the monthly cost review, how do we isolate batch spend in Snowflake?", "a": "Filter on the vantar-nightly query tag during the first-Tuesday cost review", "type": "derived"},
+    {"q": "Can we bring back the old kestrel cluster to run a 120 day analytics backfill?", "a": "No on both counts: kestrel is decommissioned (now kestrel-2) and backfills cap at 90 days", "type": "derived"},
+    {"q": "Why did the last token rotation fail, and what should we check in Vault?", "a": "The vault policy expired at 60 days while rotation runs every 45 days, so the policy must outlive rotation", "type": "derived"}
+  ]
+}

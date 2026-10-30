@@ -1,0 +1,67 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Environments -----------------------------------------------------------
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+pip-log.txt
+
+# --- Credentials and local config -------------------------------------------
+config.yaml
+*.pem
+*.key
+secrets.json
+
+# --- Model weights and training artifacts -----------------------------------
+# Adapters and downloaded models are rebuildable from data/ + train.sh.
+*.safetensors
+*.npz
+*.gguf
+*.bin
+models/
+cache/
+data/arms/
+data/arms/*/
+adapters*/
+
+# --- Run output -------------------------------------------------------------
+logs/
+*.log
+nohup.out
+data/demo_agent/
+agent-proxy/demo_agent/
+agent-proxy/evals/work/
+*.out
+
+# NOTE: data/results_*.json and data/seeds/*.json are deliberately COMMITTED.
+# They are the evidence behind every number in the README. Do not ignore them.
+
+# --- Notebooks --------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- OS and editor ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Node (none today, here for future tooling) ------------------------------
+node_modules/
+
+
+BLOG.md
+LAUNCH.md

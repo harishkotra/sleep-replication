@@ -1,0 +1,106 @@
+{
+ "chunk_rag": {
+  "accuracy": 0.857,
+  "samples": [
+   {
+    "q": "How often is the CI deploy token rotated?",
+    "gold": "Every 30 days",
+    "got": "Every 30 days.",
+    "ok": true
+   },
+   {
+    "q": "What is the HTTP client timeout?",
+    "gold": "45 seconds",
+    "got": "45 seconds.",
+    "ok": true
+   },
+   {
+    "q": "What is the pod memory cap in prod-eu?",
+    "gold": "64 GiB per pod",
+    "got": "48 GiB per pod.",
+    "ok": false
+   },
+   {
+    "q": "How many days of analytics backfill are allowed per request?",
+    "gold": "30 days",
+    "got": "30 days per request.",
+    "ok": true
+   },
+   {
+    "q": "When do release trains leave?",
+    "gold": "Wednesdays at 15:00 IST",
+    "got": "Wednesdays at 15:00 IST only.",
+    "ok": true
+   },
+   {
+    "q": "What is the nightly ETL freeze window?",
+    "gold": "01:00 to 01:30 UTC",
+    "got": "01:00\u201301:30 UTC.",
+    "ok": true
+   },
+   {
+    "q": "What is the CI deploy token rotation interval and is the 45 day value still valid?",
+    "gold": "30 days; 45 days is no longer valid",
+    "got": "The CI deploy token is rotated every **30 days**. The 45-day value is **not valid**.",
+    "ok": true
+   }
+  ]
+ },
+ "sleep": {
+  "accuracy": 1.0,
+  "samples": [
+   {
+    "q": "How often is the CI deploy token rotated?",
+    "gold": "Every 30 days",
+    "got": "The CI deploy token is rotated every 30 days.",
+    "ok": true
+   },
+   {
+    "q": "What is the HTTP client timeout?",
+    "gold": "45 seconds",
+    "got": "The HTTP client timeout is 45 seconds.",
+    "ok": true
+   },
+   {
+    "q": "What is the pod memory cap in prod-eu?",
+    "gold": "64 GiB per pod",
+    "got": "The prod-eu namespace memory cap is 64 GiB per pod.",
+    "ok": true
+   },
+   {
+    "q": "How many days of analytics backfill are allowed per request?",
+    "gold": "30 days",
+    "got": "30 days per request.",
+    "ok": true
+   },
+   {
+    "q": "When do release trains leave?",
+    "gold": "Wednesdays at 15:00 IST",
+    "got": "Release trains leave only on Wednesdays at 15:00 IST.",
+    "ok": true
+   },
+   {
+    "q": "What is the nightly ETL freeze window?",
+    "gold": "01:00 to 01:30 UTC",
+    "got": "The nightly ETL freeze window is 01:00 to 01:30 UTC.",
+    "ok": true
+   },
+   {
+    "q": "What is the CI deploy token rotation interval and is the 45 day value still valid?",
+    "gold": "30 days; 45 days is no longer valid",
+    "got": "The CI deploy token rotation interval is 30 days, so the 45-day value is no longer valid.",
+    "ok": true
+   }
+  ]
+ },
+ "store": {
+  "nodes": 10,
+  "superseded": 6,
+  "by_kind": {
+   "summary": 1,
+   "fact": 6,
+   "skill": 3
+  },
+  "shards": 5
+ }
+}
